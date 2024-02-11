@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[fontsize=13pt]{scrextend}
+\usepackage[paperheight=29.7cm,paperwidth=21cm,right=2cm,left=3cm,top=2cm,bottom=2.5cm]{geometry}
+\usepackage{mathptmx}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{array} % Required for Table Column Text Alignment with Custom Widths
+\usetikzlibrary{calc}
+
+
+
+\begin{document}
+\begin{titlepage}
+    \begin{tikzpicture}[overlay, remember picture]
+        \draw [line width=3pt]
+        ($ (current page.north west) + (3.0cm,-2.0cm) $)
+        rectangle
+        ($ (current page.south east) + (-2.0cm,2.5cm) $);
+        \draw [line width=0.5pt]
+        ($ (current page.north west) + (3.1cm,-2.1cm) $)
+        rectangle
+        ($ (current page.south east) + (-2.1cm,2.6cm) $);
+    \end{tikzpicture}
+    \begin{center}
+        \vspace{-6pt}TRƯỜNG ĐẠI HỌC CẦN THƠ \\
+        \textbf{\fontsize{14pt}{0pt}\selectfont TRƯỜNG CÔNG NGHỆ THÔNG TIN VÀ TRUYỀN THÔNG}
+        % \vspace{0.5cm}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=3.3cm]{images/logo-ctu.png}
+        \end{figure}
+        \textbf{NGÔN NGỮ MÔ HÌNH HÓA} \\
+        \textbf{Mã Học Phần: CT182}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=3cm]{images/logo-uml.png}
+        \end{figure}
+        \textbf{\fontsize{16pt}{0pt}\selectfont ĐỀ TÀI} \\
+        \textbf{\fontsize{18pt}{0pt}\selectfont QUẢN LÝ CÁC GIẢI THI ĐẤU THỂ THAO} \\
+        \vspace{0.5cm}
+        \textbf{\textit{Mã lớp học phần: CT182 - 04}}\\
+        \textbf{\textit{Nhóm thực hiện: 06}}\\
+        \textbf{\textit{Giảng viên hướng dẫn: TS. Nguyễn Thanh Hải}}\\
+        \vspace{0.5cm}
+        \renewcommand{\arraystretch}{1.2}
+        \begin{tabular}{|>{\centering}m{5.65cm}|c|c|}
+            \hline
+            \multicolumn{3}{|c|}{\textbf{Thành viên nhóm}}                                  \\\hline
+            \textbf{Họ và Tên} & \textbf{MSSV} & \textbf{Lớp}                               \\\hline
+            Nguyễn Tuấn Đạt    & B2203499      & DI2296A1                                   \\\hline
+            Khưu Thị Bích Ngọc & B2203514      & DI2296A1                                   \\\hline
+            Trần Thái Toàn     & B2203534      & DI2296A1                                   \\\hline
+            Trần Minh Trí      & B2203536      & DI2296A1                                   \\\hline
+            Linh               & B2207536      & ?                                          \\\hline
+            \multicolumn{3}{|c|}{\textbf{Email người nộp: ngocb2203514@student.ctu.edu.vn}} \\\hline
+        \end{tabular} \\
+        \vspace{3.5cm}
+        \textbf{Học Kỳ II, 2023 - 2024} \\
+    \end{center}
+\end{titlepage}
+\begin{titlepage}
+\end{titlepage}
+\end{document}
