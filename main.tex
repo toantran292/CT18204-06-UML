@@ -11,6 +11,8 @@
 \usepackage{array} % Required for Table Column Text Alignment with Custom Widths
 \usepackage{indentfirst}
 \usepackage{enumitem}
+\usepackage{svg}
+
 \setlist{nolistsep}
 \renewcommand{\baselinestretch}{1.2}
 
@@ -34,7 +36,7 @@
 
 
 \renewcommand{\figurename}{\fontsize{12pt}{0pt}\selectfont \bfseries Hình}
-\renewcommand{\thefigure}{\thesubsection.\arabic{figure}}
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
 \usepackage{caption}
 \captionsetup[figure]{labelsep=space}
 
@@ -51,9 +53,29 @@
 \newcounter{loopcntr}
 \newcommand{\rpt}[2][1]{\forloop{loopcntr}{0}{\value{loopcntr}<#1}{#2}}
 
-% SET UP FOR LIST ITEMS
-\newcommand{\doubleindent}{\indent\indent}
-\newcommand{\firstitem}{\doubleindent$\bullet$\, }
+% Link to figure
+\newcommand{\myref}[1]{\textbf{\hyperref[#1]{Hình~\ref*{#1}}}}
+
+\usepackage{fancyhdr}
+\fancyhf{}
+
+% Set the headheight to the required value
+\setlength{\headheight}{15.89252pt} % Adjust as needed
+
+% Define header content
+\fancyhead[L]{\selectfont \bfseries \itshape Quản lý các giải thi đấu thể thao}
+\fancyhead[R]{\selectfont \bfseries \itshape \rightmark}
+
+\fancyfoot[L]{\selectfont \bfseries \itshape CT18204 - Nhóm 06}
+\fancyfoot[R]{Trang \thepage}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\renewcommand{\subsectionmark}[1]{}
+% apply to document
+\pagestyle{fancy}
+
+\newcommand{\setsection}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
 
 \begin{document}
 
@@ -80,6 +102,7 @@
     \let\oldnumberline\numberline
     \renewcommand{\numberline}{\figurename~\oldnumberline}
     \listoffigures
+    \thispagestyle{empty}
 }
 \addcontentsline{toc}{section}{DANH MỤC HÌNH}
 \cleardoublepage
@@ -87,8 +110,10 @@
 \pagenumbering{arabic}
 \input{chapter-1/index}
 \newpage
+\input{chapter-2/index}
+\newpage
 
 \phantomsection
-\section*{TÀI LIỆU THAM KHẢO}
-\addcontentsline{toc}{section}{Tài liệu tham khảo}
+\setsection{TÀI LIỆU THAM KHẢO}
+\markright{Tài liệu tham khảo}
 \end{document}
