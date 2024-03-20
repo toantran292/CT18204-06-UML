@@ -44,7 +44,7 @@ td {
       <td rowspan="2">themDoi</td>
       <td rowspan="2">public</td>
       <td colspan="4">Có 1 tham số</td>
-      <td rowspan="2"></td>
+      <td rowspan="2">bool</td>
       <td rowspan="2">Thêm đội thi đấu vào trận đấu</td>
     </tr>
     <tr>
@@ -57,7 +57,7 @@ td {
       <td rowspan="2">xoaDoi</td>
       <td rowspan="2">public</td>
       <td colspan="4">Có 1 tham số</td>
-      <td rowspan="2"></td>
+      <td rowspan="2">bool</td>
       <td rowspan="2">Xóa đội thi đấu khỏi trận đấu</td>
     </tr>
     <tr>
@@ -70,7 +70,7 @@ td {
       <td rowspan="2">themDiaDiem</td>
       <td rowspan="2">public</td>
       <td colspan="4">Có 1 tham số</td>
-      <td rowspan="2"></td>
+      <td rowspan="2">bool</td>
       <td rowspan="2">Thêm địa điểm thi đấu vào trận đấu</td>
     </tr>
     <tr>
@@ -80,11 +80,11 @@ td {
       <td>8</td>
     </tr>
     <tr>
-      <td rowspan="2">suaDiaDiem</td>
+      <td rowspan="2">doiDiaDiem</td>
       <td rowspan="2">public</td>
       <td colspan="4">Có 1 tham số</td>
-      <td rowspan="2"></td>
-      <td rowspan="2">Sửa địa điểm thi đấu của trận đấu</td>
+      <td rowspan="2">bool</td>
+      <td rowspan="2">Đổi địa điểm thi đấu của trận đấu</td>
     </tr>
     <tr>
       <td>idDiaDiem</td>
@@ -92,19 +92,7 @@ td {
       <td>null</td>
       <td>8</td>
     </tr>
-    <tr>
-      <td rowspan="2">xoaDiaDiem</td>
-      <td rowspan="2">public</td>
-      <td colspan="4">Có 1 tham số</td>
-      <td rowspan="2"></td>
-      <td rowspan="2">Xóa địa điểm thi đấu của trận đấu</td>
-    </tr>
-    <tr>
-      <td>idDiaDiem</td>
-      <td>String</td>
-      <td>null</td>
-      <td>8</td>
-    </tr>
+
 </table>
 
 

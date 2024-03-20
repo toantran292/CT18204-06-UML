@@ -35,7 +35,7 @@ td {
       <td rowspan="2">layKetQua</td>
       <td rowspan="2">public</td>
       <td colspan="4">Không có tham số</td>
-      <td rowspan="2">List</td>
+      <td rowspan="2">OrderedList</td>
       <td rowspan="2">Trả về danh sách có thứ tự về kết quả thi đấu của các đội tham gia</td>
     </tr><tr>
       <td colspan="4"></td>

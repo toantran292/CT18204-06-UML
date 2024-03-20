@@ -1,6 +1,6 @@
 # Đặc tả use case Xem diễn biến trận đấu
 
-| Tên use case | Đăng nhập |
+| Tên use case | Xem diễn biến trận đấu |
 | --- | ----- |
 | Tóm tắt | Cho phép người sử dụng xem diễn biến của trận đấu |
 | Ngày tạo | 10/03/2024 |

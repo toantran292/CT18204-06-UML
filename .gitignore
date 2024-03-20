@@ -12,6 +12,8 @@
 *.cb2
 .*.lb
 
+out/chapter*/*
+
 ## Intermediate documents:
 *.dvi
 *.xdv

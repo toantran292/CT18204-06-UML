@@ -3,7 +3,7 @@
 ### 1. Thuộc tính
 | Tên thuộc tính | Kiểu truy cập | Kiểu dữ liệu | Giá trị mặc nhiên | Kích thước| Min | Max | Diễn giải |
 |---|---|---|---|---|---|---|---|
-| idVongLoai | public | String | null | 8 | | | tên vòng loại |
+| idVongLoai | public | String | null | 8 | | | id vòng loại |
 | tenVongLoai | public | String | null | 30 | | | tên vòng loại |
 
 ### 2. Phương thức
@@ -45,8 +45,8 @@ td {
       <td rowspan="2">themTranDauLoai</td>
       <td rowspan="2">public</td>
       <td colspan="4">Có 1 tham số</td>
-      <td rowspan="2"></td>
-      <td rowspan="2">Thêm đội thi đấu vào trận đấu</td>
+      <td rowspan="2">bool</td>
+      <td rowspan="2">Thêm trận đấu vào vòng đấu</td>
     </tr>
     <tr>
       <td>idTranDauLoai</td>
@@ -58,8 +58,8 @@ td {
       <td rowspan="2">xoaTranDauLoai</td>
       <td rowspan="2">public</td>
       <td colspan="4">Có 1 tham số</td>
-      <td rowspan="2"></td>
-      <td rowspan="2">Xóa đội thi đấu khỏi trận đấu</td>
+      <td rowspan="2">bool</td>
+      <td rowspan="2">Xóa trận đấu khỏi vòng đấu</td>
     </tr>
     <tr>
       <td>idTranDauLoai</td>
