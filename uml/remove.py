@@ -1,4 +1,5 @@
 import os
+from fnmatch import fnmatch
 from bs4 import BeautifulSoup
 
 def get_svg_files(folder_path):
@@ -8,7 +9,7 @@ def get_svg_files(folder_path):
 
 def delete_text(svg_content):
     soup = BeautifulSoup(svg_content, 'xml') 
-    elements = soup.find_all(text="UNREGISTERED")  
+    elements = soup.find_all(string='UNREGISTERED')  
     for element in elements:
         parent = element.parent
         if parent.name == 'text':
@@ -24,11 +25,17 @@ def edit_svg_file(file_path):
 
 # file = 'UseCaseTongQuat.svg'
 
-current_path = os.path.dirname(os.path.realpath(__file__))
-files = get_svg_files(current_path)
+root = os.path.dirname(os.path.realpath(__file__))
+# files = get_svg_files(current_path)
 
-for file in files:
-    file_path = os.path.join(current_path, file)
-    edit_svg_file(file_path)
-    print(f"{file} edited successfully")
+# for file in files:
+#     file_path = os.path.join(current_path, file)
+#     edit_svg_file(file_path)
+#     print(f"{file} edited successfully")
+for path, subdirs, files in os.walk(root):
+    for name in files:
+        if fnmatch(name, "*.svg"):
+            fpath = os.path.join(path, name)
+            edit_svg_file(fpath)
+            print(f"{name} edited successfully")
 
