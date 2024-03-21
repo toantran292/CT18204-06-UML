@@ -42,10 +42,8 @@
                 <li>Người dùng nhập tên đăng nhập, mật khẩu và nhấn đăng nhập.</li>
                 <li>
                     Hệ thống kiểm tra thông tin đăng nhập. </br>
-                    <b>Có thể nhảy đến: </b>
-                    <ol type="A" start="A">
-                        <li value="A">Người dùng nhập sai tên đăng nhập, mật khẩu.</li>
-                    </ol>
+                    <b>Có thể nhảy đến: </b> </br>
+                    A. Người dùng nhập sai tên đăng nhập, mật khẩu.
                 </li>
                 <li>Hệ thống hiển thị thông báo đăng nhập thành công</li>
                 <li>Hệ thống chuyển hướng người dùng tới trang chủ với các chức năng hiển thị theo quyền hạn của tài khoản</li>
