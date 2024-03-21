@@ -7,29 +7,17 @@
 
 ### 2. Phương thức
 
-<style>
-table {
-  border-collapse:collapse;
-}
-
-td {
-  border: 1px solid #000;
-  margin: 0;
-  font-weight: bold;
-  padding: 0.5em;
-}
-</style>
 
 <table>
     <tr>
-        <td>Tên phương thức</td>
-        <td>Kiểu truy cập</td>
-        <td>Danh sách các tham số</td>
-        <td>Kiểu dữ liệu tham số</td>
-        <td>Giá trị mặc nhiên</td>
-        <td>Kích thước</td>
-        <td>Kiểu trả về của phương thức</td>
-        <td>Diễn giải</td>
+        <th>Tên phương thức</th>
+        <th>Kiểu truy cập</th>
+        <th>Danh sách các tham số</th>
+        <th>Kiểu dữ liệu tham số</th>
+        <th>Giá trị mặc nhiên</th>
+        <th>Kích thước</th>
+        <th>Kiểu trả về của phương thức</th>
+        <th>Diễn giải</th>
     </tr>
     <tr>
       <td rowspan="2">layDoiThang</td>
