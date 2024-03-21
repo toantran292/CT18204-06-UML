@@ -2,7 +2,7 @@
 
 ## 1. Cây thư mục
 
-```
+```bash
 UML                                                                        
 ├── readme.md
 ├── report                  <- Chứa file báo cáo
