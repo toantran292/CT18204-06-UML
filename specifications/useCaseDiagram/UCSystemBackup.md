@@ -63,7 +63,7 @@
                     <ol type="1" start="6">
                         <li>Quản trị viên kiểm tra nguyên nhân gây lỗi sao lưu và thực hiện lại các bước sao lưu</li>
                     </ol>
-                    Trở về bước 1 của kịch bản thường.
+                    Trở về bước 3 của kịch bản thường.
                 </li>
             </ol>
         </td>
