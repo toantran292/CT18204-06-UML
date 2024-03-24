@@ -1,4 +1,4 @@
-# Đặc tả use case Tạo đội
+# Đặc tả use case Tạo tài khoản người dùng
 
 <table>
     <tr>

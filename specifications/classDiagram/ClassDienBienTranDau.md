@@ -1,4 +1,4 @@
-# Đặc tả class MonTheThao
+# Đặc tả class DienBienTranDau
 
 ### 1. Thuộc tính(Không có)
 
