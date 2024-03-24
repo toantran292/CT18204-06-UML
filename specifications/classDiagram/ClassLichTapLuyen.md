@@ -15,7 +15,7 @@
     <tr>
         <th>Tên phương thức</th>
         <th>Kiểu truy cập</th>
-        <th>hanh sách các tham số</th>
+        <th>Danh sách các tham số</th>
         <th>Kiểu hữ liệu tham số</th>
         <th>Giá trị mặc nhiên</th>
         <th>Kích thước</th>
@@ -23,11 +23,11 @@
         <th>Diễn giải</th>
     </tr>
     <tr>
-      <td rowspan="4">lapLich()</td>
-      <td rowspan="4">public</td>
-      <td colspan="4">Có 3 tham số</td>
-      <td rowspan="4">LichTapLuyen</td>
-      <td rowspan="4">Lập lịch tập luyện</td>
+      <td rowspan="5">lapLich()</td>
+      <td rowspan="5">public</td>
+      <td colspan="4">Có 4 tham số</td>
+      <td rowspan="5">LichTapLuyen</td>
+      <td rowspan="5">Lập lịch tập luyện</td>
     </tr><tr>
       <td colspan="1">ngayTap</td>
       <td colspan="1">Date</td>
@@ -43,6 +43,12 @@
     <tr>
       <td colspan="1">soLuong</td>
       <td colspan="1">int</td>
+      <td colspan="1">null</td>
+      <td colspan="1"></td>
+    </tr>
+    <tr>
+      <td colspan="1">doi</td>
+      <td colspan="1">Doi</td>
       <td colspan="1">null</td>
       <td colspan="1"></td>
     </tr>
