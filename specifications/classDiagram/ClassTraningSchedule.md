@@ -10,18 +10,6 @@
 
 ### 2. Phương thức
 
-<style>
-table {
-  border-collapse:collapse;
-}
-
-td {
-  border: 1px solid #000;
-  margin: 0;
-  font-weight: bold;
-  padding: 0.5em;
-}
-</style>
 
 <table>
     <tr>

@@ -3,7 +3,7 @@
 ### 1. Thuộc tính
 | Tên thuộc tính | Kiểu truy cập | Kiểu dữ liệu | Giá trị mặc nhiên | Kích thước| Min | Max | Diễn giải |
 |---|---|---|---|---|---|---|---|
-| idTranDauLoai | public | String | null | 8 | | | mã trận đấu |
+
 
 ### 2. Phương thức
 
