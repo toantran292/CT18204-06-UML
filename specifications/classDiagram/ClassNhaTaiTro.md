@@ -8,7 +8,7 @@
 |logo|public|String|null|50|||Logo của nhà tài trợ.|
 |diaChi|public|String|null|50|||Địa chỉ của nhà tài trợ.|
 |trangWeb|public|String|null|50|||Link trang web của nhà tài trợ.|
-|sdt|public|String|null|10|||Số điện thoại của nhà tài trợ.|
+|SDT|public|String|null|10|||Số điện thoại của nhà tài trợ.|
 
 ### 2. Phương thức
 
