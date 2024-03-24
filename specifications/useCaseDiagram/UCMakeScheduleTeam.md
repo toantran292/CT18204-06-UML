@@ -64,9 +64,25 @@
                      Thời gian không hợp lệ. </br>
                     Chuỗi A bắt đầu ở bước 5 của kịch bản thường.
                     <ol type="1" start="6">
-                        <li>Hệ thống hiển thị thông báo ”Thời gian không hợp lệ do trùng lịch tập hoặc chọn thời gian tập sai”.</li>
+                        <li>Hệ thống hiển thị thông báo ”Thời gian không hợp lệ do trùng lịch tập hoặc chọn thời 
+                        gian tập sai”.
+                         <br/>
+                        <b>Có thể nhảy đến:</b>
+                        <ol type="A" start="A">
+                            <li>
+                                Trưởng đoàn chọn hủy.
+                            </li>
+                        </ol>
+                        </li>
                     </ol>
-                    Trở về bước 2 của kịch bản thường.
+                    Trở về bước 3 của kịch bản thường.
+                </li>
+            </ol>
+            <ol type="a">
+                <li>
+                     Trưởng đoàn chọn hủy. </br>
+                    Chuỗi a bắt đầu ở bước 6 của kịch bản thay thế A.<br/>
+                    Trở về bước 8 của kịch bản thường.
                 </li>
             </ol>
         </td>

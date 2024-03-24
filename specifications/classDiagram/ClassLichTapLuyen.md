@@ -23,7 +23,7 @@
         <th>Diễn giải</th>
     </tr>
     <tr>
-      <td rowspan="5">lapLich()</td>
+      <td rowspan="5">lapLichDoi()</td>
       <td rowspan="5">public</td>
       <td colspan="4">Có 4 tham số</td>
       <td rowspan="5">LichTapLuyen</td>
@@ -52,7 +52,19 @@
       <td colspan="1">null</td>
       <td colspan="1"></td>
     </tr>
-    
+    <tr>
+      <td rowspan="2">kiemTraLichTap()</td>
+      <td rowspan="2">public</td>
+      <td colspan="4">Có 1 tham số</td>
+      <td rowspan="2">boolean</td>
+      <td rowspan="2">Kiểm tra ngày tập,nếu ngày hợp lệ là true, ngược lại là false</td>
+    </tr>
+  <tr>
+      <td colspan="1">ngayTap</td>
+      <td colspan="1">Date</td>
+      <td colspan="1"></td>
+      <td colspan="1"></td>
+    </tr>
 </table>
 
 
