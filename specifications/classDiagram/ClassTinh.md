@@ -20,7 +20,7 @@
         <td>Diễn giải</td>
     </tr>
     <!-- -----------------------------themTinh------------------- -->
-    <tr>
+    <!-- <tr>
       <td rowspan="2">themTinh</td>
       <td rowspan="2">public</td>
       <td colspan="4">Có 1 tham số</td>
@@ -32,15 +32,37 @@
       <td>string</td>
       <td>null</td>
       <td>30</td>
-    </tr>
+    </tr> -->
     <!-- -----------------------------xoaTinh------------------- -->
-     <tr>
+     <!-- <tr>
       <td>xoaTinh</td>
       <td>public</td>
       <td colspan="4">Có 0 tham số</td>
       <td>bool</td>
       <td>Xóa 1 tỉnh thi đấu</td>
+    </tr> -->
+    <!-- --------xemThongTinTinh-------------- -->
+    <!-- <tr>
+      <td>xemThongTinTinh</td>
+      <td>public</td>
+      <td colspan="4">Có 0 tham số</td>
+      <td>Tinh</td>
+      <td>Xem thông tin của 1 tỉnh</td>
+    </tr> -->
+    <!-- taiDSTinhVietNam -->
+    <tr>
+      <td rowspan="2">taiDSTinhVietNam</td>
+      <td rowspan="2">public</td>
+      <td colspan="4">Có 1 tham số</td>
+      <td rowspan="2">bool</td>
+      <td rowspan="2">Tải thông tin 63 tỉnh thành lên hệ thống, trả về kết quả tải có thành công hay không</td>
     </tr>
+    <tr>
+      <td>duLieu</td>
+      <td>List < String > </td>
+      <td>null</td>
+      <td>30</td>
+    </tr> 
     <!-- -----------------------------suaThongTinTinh-------------------->
      <tr>
       <td rowspan="2">suaThongTinTinh</td>
@@ -55,14 +77,6 @@
       <td>null</td>
       <td>30</td>
     </tr>
-    <!-- --------xemThongTinTinh-------------- -->
-    <tr>
-      <td>xemThongTinTinh</td>
-      <td>public</td>
-      <td colspan="4">Có 0 tham số</td>
-      <td>Tinh</td>
-      <td>Xem thông tin của 1 tỉnh</td>
-    </tr>
     <!-- --------layDSTinh-------------- -->
     <tr>
       <td>layDSTinh</td>
@@ -72,7 +86,7 @@
       <td>Lấy danh sách tất cả các Tỉnh</td>
     </tr>
     <!-- --------layDSTinhTheoGiaiDau-------------- -->
-     <tr>
+     <!-- <tr>
       <td rowspan="2">layDSTinhTheoGiaiDau</td>
       <td rowspan="2">public</td>
       <td colspan="4">Có 1 tham số</td>
@@ -84,6 +98,14 @@
       <td>string</td>
       <td>null</td>
       <td>8</td>
+    </tr> -->
+       <!-- --------layDSDoanTheoTinh-------------- -->
+     <tr>
+      <td>layDSDoan</td>
+      <td>public</td>
+      <td colspan="4">Có 1 tham số</td>
+      <td>List < Doan ></td>
+      <td>Lấy danh sách tất cả đoàn trong 1 tỉnh</td>
     </tr>
     <!-- ---------------------inDSTinh--------------- -->
     <tr>

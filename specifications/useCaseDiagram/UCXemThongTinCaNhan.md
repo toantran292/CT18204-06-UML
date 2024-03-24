@@ -14,4 +14,4 @@
 | | 4. Hệ thống chuyển hướng sang trang chủ | 
 | Kịch thay thế | |
 | Kịch bản lỗi | |
-| Kết quả | Thao tác gửi yêu cầu chỉnh sửa thông tin được gửi thành công |
+| Kết quả | Người dùng xem được thông tin cá nhân |

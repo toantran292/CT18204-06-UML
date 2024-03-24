@@ -19,19 +19,13 @@
         <td>Kiểu trả về của phương thức</td>
         <td>Diễn giải</td>
     </tr>
-    <!-- -----------------------------themDoan------------------- -->
+    <!-- -----------------------------layDSDoi------------------- -->
     <tr>
-      <td rowspan="2">themDoan</td>
-      <td rowspan="2">public</td>
-      <td colspan="4">Có 1 tham số</td>
-      <td rowspan="2">bool</td>
-      <td rowspan="2">Thêm 1 đoàn thi đấu mới</td>
-    </tr>
-    <tr>
-      <td>tenDoan</td>
-      <td>string</td>
-      <td>null</td>
-      <td>30</td>
+      <td>layDSDoi</td>
+      <td>public</td>
+      <td colspan="4">Có 0 tham số</td>
+      <td>List < Doi ></td>
+      <td>Lấy danh sách đội trong Đoàn</td>
     </tr>
     <!-- -----------------------------xoaDoan------------------- -->
      <tr>
@@ -57,11 +51,25 @@
     </tr>
     <!-- --------xemThongTinDoan-------------- -->
     <tr>
-      <td>xemThongTinDoan</td>
+      <td>layThongTinDoan</td>
       <td>public</td>
       <td colspan="4">Có 0 tham số</td>
       <td>Doan</td>
-      <td>Xem thông tin của 1 đoàn</td>
+      <td>Lấy thông tin của 1 đoàn</td>
+    </tr>
+    <!-- -----------------------------themDoi------------------- -->
+    <tr>
+      <td rowspan="2">themDoi</td>
+      <td rowspan="2">public</td>
+      <td colspan="4">Có 1 tham số</td>
+      <td rowspan="2">bool</td>
+      <td rowspan="2">Thêm 1 đội thi đấu vào đoàn</td>
+    </tr>
+    <tr>
+      <td>idDoi</td>
+      <td>string</td>
+      <td>null</td>
+      <td>8</td>
     </tr>
     <!-- -----------------------------themDoi------------------- -->
     <tr>
@@ -98,20 +106,6 @@
       <td colspan="4">Có 0 tham số</td>
       <td>List < Doan ></td>
       <td>Lấy danh sách tất cả các đoàn</td>
-    </tr>
-    <!-- --------layDSDoanTheoTinh-------------- -->
-     <tr>
-      <td rowspan="2">layDSDoanTheoTinh</td>
-      <td rowspan="2">public</td>
-      <td colspan="4">Có 1 tham số</td>
-      <td rowspan="2">List < Doan ></td>
-      <td rowspan="2">Lấy danh sách tất cả đoàn trong 1 tỉnh</td>
-    </tr>
-    <tr>
-      <td>idTinh</td>
-      <td>string</td>
-      <td>null</td>
-      <td>8</td>
     </tr>
     <!-- ---------------------inDSDoan--------------- -->
     <tr>

@@ -43,11 +43,11 @@
     </tr>
     <!-- --------xemThongTinDoi-------------- -->
     <tr>
-      <td>xemThongTinDoi</td>
+      <td>layThongTinDoi</td>
       <td>public</td>
       <td colspan="4">Có 0 tham số</td>
       <td>Doi</td>
-      <td>Xem thông tin của đội</td>
+      <td>Lấy thông tin của đội</td>
     </tr>
     <!-- --------------------------suaThongTinDoi------------------- -->
     <tr>

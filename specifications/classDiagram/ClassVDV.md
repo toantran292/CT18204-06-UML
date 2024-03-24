@@ -21,11 +21,11 @@
     </tr>
     <!-- -----------------------------xemThongTinCaNhan------------------- -->
      <tr>
-      <td>xemThongTinCaNhan</td>
+      <td>layThongTin</td>
       <td>public</td>
       <td colspan="4">Có 0 tham số</td>
       <td>VDV</td>
-      <td>Xem thông tin của VDV</td>
+      <td>Lấy thông tin của VDV</td>
     </tr>
     <!-- --------------------------yeuCauSuaThongTin------------------- -->
     <tr>
