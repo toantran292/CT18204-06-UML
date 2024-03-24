@@ -15,6 +15,18 @@
 
 ### 2. Phương thức
 
+<style>
+table {
+  border-collapse:collapse;
+}
+
+td {
+  border: 1px solid #000;
+  margin: 0;
+  font-weight: bold;
+  padding: 0.5em;
+}
+</style>
 
 <table>
     <tr>
@@ -28,7 +40,7 @@
         <td>Diễn giải</td>
     </tr>
     <tr>
-      <td rowspan="2">taoTaiKhoan</td>
+      <td rowspan="2">themTaiKhoan</td>
       <td rowspan="2">public</td>
       <td colspan="4">Có 2 tham số</td>
       <td rowspan="2">NguoiCoTaiKhoan</td>
