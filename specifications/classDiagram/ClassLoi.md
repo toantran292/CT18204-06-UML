@@ -21,19 +21,19 @@
     </tr>
     <!-- -----------------------------taoDoi------------------- -->
     <tr>
-      <td rowspan="2">layLoi</td>
+      <td rowspan="2">layDSLoi</td>
       <td rowspan="2">public</td>
       <td colspan="4">không có tham số</td>
-      <td rowspan="2">Loi</td>
-      <td rowspan="2">Lấy lỗi của vận động viên trong một trận đấu loại</td>
+      <td rowspan="2">List < Loi ></td>
+      <td rowspan="2">Lấy danh sách lỗi của vận động viên trong một trận đấu loại</td>
     </tr>
     <td colspan="4"></td>
     <tr>
-      <td rowspan="2">capNhatLoiVDV</td>
+      <td rowspan="2">taoLoi</td>
       <td rowspan="2">public</td>
       <td colspan="4">không có tham số</td>
       <td rowspan="2">Bool</td>
-      <td rowspan="2">cập nhật lỗi của vận động viên trong một trận đấu loại</td>
+      <td rowspan="2">Tạo lỗi vi phạm của vận động viên trong một trận đấu loại</td>
     </tr>
     <td colspan="4"></td>
 </table>
