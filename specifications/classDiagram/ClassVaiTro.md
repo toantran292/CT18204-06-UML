@@ -1,15 +1,12 @@
-# Đặc tả class DiaDiem
+# Đặc tả class Vai trò
 
-### 1. Thuộc tính
+### 1. Thuộc tính 
 | Tên thuộc tính | Kiểu truy cập | Kiểu dữ liệu | Giá trị mặc nhiên | Kích thước| Min | Max | Diễn giải |
 |---|---|---|---|---|---|---|---|
-| idDiaDiem | public | String | null | 8 | | | id địa điểm |
-| tenDiaDiem | public | String | null | 50 | | | tên của địa điểm |
-| diaChi | public | String | null | 30 | | | Địa chỉ của địa điểm |
-| sucChua | public | int | null |  | 0 | 1000000 | Sức chứa của địa điểm|
+| idVaiTro | private | string | null | 8|  |  |   |
+| tenVaiTro | private | string | null | 30|  |  |   |
 
 ### 2. Phương thức
-
 
 <table>
     <tr>
@@ -22,7 +19,20 @@
         <td>Kiểu trả về của phương thức</td>
         <td>Diễn giải</td>
     </tr>
-    
+    <!-- ---------------------suaVaiTro--------------- -->
+    <tr>
+      <td rowspan="2">suaVaiTro</td>
+      <td rowspan="2">public</td>
+      <td colspan="4">Có 1 tham số</td>
+      <td rowspan="2">bool</td>
+      <td rowspan="2">Sửa thông tin của 1 vai trò</td>
+    </tr>
+    <tr>
+      <td>tenVaiTro</td>
+      <td>string</td>
+      <td>null</td>
+      <td>30</td>
+    </tr>
 </table>
 
 

@@ -1,9 +1,9 @@
-# Đặc tả class TaiKhoan
+# Đặc tả class NguoiCoTaiKhoan
 
 ### 1. Thuộc tính
 | Tên thuộc tính | Kiểu truy cập | Kiểu dữ liệu | Giá trị mặc nhiên | Kích thước| Min | Max | Diễn giải |
 |---|---|---|---|---|---|---|---|
-| idTaiKhoan | protected | String | null | 8 | | | id người dùng |
+| idNguoiDung | protected | String | null | 8 | | | id người dùng |
 | tenDangNhap | protected | String | null | 30 | | | Tên đăng nhập hệ thống |
 | matKhau | protected | String | null | 30 | | | Mật khẩu đăng nhập |
 | email | protected | String | null | 30 | | | Email|
@@ -30,29 +30,23 @@ td {
 
 <table>
     <tr>
-        <th>Tên phương thức</th>
-        <th>Kiểu truy cập</th>
-        <th>hanh sách các tham số</th>
-        <th>Kiểu hữ liệu tham số</th>
-        <th>Giá trị mặc nhiên</th>
-        <th>Kích thước</th>
-        <th>Kiểu trả về của phương thức</th>
-        <th>Diễn giải</th>
+        <td>Tên phương thức</td>
+        <td>Kiểu truy cập</td>
+        <td>Danh sách các tham số</td>
+        <td>Kiểu dữ liệu tham số</td>
+        <td>Giá trị mặc nhiên</td>
+        <td>Kích thước</td>
+        <td>Kiểu trả về của phương thức</td>
+        <td>Diễn giải</td>
     </tr>
     <tr>
-      <td rowspan="3">themTaiKhoan</td>
-      <td rowspan="3">public</td>
+      <td rowspan="2">themTaiKhoan</td>
+      <td rowspan="2">public</td>
       <td colspan="4">Có 2 tham số</td>
-      <td rowspan="3">TaiKhoan</td>
-      <td rowspan="3">Thêm tài khoản người dùng</td>
+      <td rowspan="2">NguoiCoTaiKhoan</td>
+      <td rowspan="2">Thêm tài khoản người dùng</td>
     </tr><tr>
       <td colspan="1">tenDangNhap</td>
-      <td colspan="1">String</td>
-      <td colspan="1">null</td>
-      <td colspan="1"></td>
-    </tr>
-    <tr>
-      <td colspan="1">matKhau</td>
       <td colspan="1">String</td>
       <td colspan="1">null</td>
       <td colspan="1"></td>
@@ -71,7 +65,7 @@ td {
       <td></td>
     </tr>
     <tr>
-      <td>matKhau</td>
+      <td>matKhua</td>
       <td>String</td>
       <td>null</td>
       <td></td>

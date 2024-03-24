@@ -3,24 +3,12 @@
 ### 1. Thuộc tính
 | Tên thuộc tính | Kiểu truy cập | Kiểu dữ liệu | Giá trị mặc nhiên | Kích thước| Min | Max | Diễn giải |
 |---|---|---|---|---|---|---|---|
-| idHangMuc | protected | String | null | 8 | | | id hạng mục thi đấu |
+| idHangMuc | public | String | null | 8 | | | id hạng mục thi đấu |
 | tenHangMuc | public | String | null | | | | Tên hạng mục thi đấu |
 | gioiTinh | public | boolean | false | | | | Giới tính thi đấu của hạng mục |
 
 ### 2. Phương thức
 
-<style>
-table {
-  border-collapse:collapse;
-}
-
-td {
-  border: 1px solid #000;
-  margin: 0;
-  font-weight: bold;
-  padding: 0.5em;
-}
-</style>
 
 <table>
     <tr>
@@ -34,11 +22,17 @@ td {
         <td>Diễn giải</td>
     </tr>
     <tr>
-      <td rowspan="3">taoHangMuc</td>
-      <td rowspan="3">public</td>
-      <td colspan="4">Có 2 tham số</td>
-      <td rowspan="3">boolean</td>
-      <td rowspan="3">Trả về  kết quả nếu tạo được là true, ngược lại là false</td>
+      <td rowspan="4">taoHangMuc</td>
+      <td rowspan="4">public</td>
+      <td colspan="4">Có 3 tham số</td>
+      <td rowspan="4">boolean</td>
+      <td rowspan="4">Trả về  kết quả nếu tạo được là true, ngược lại là false</td>
+    </tr>
+    <tr>
+      <td>idMonTheThao</td>
+      <td>String</td>
+      <td>null</td>
+      <td></td>
     </tr>
     <tr>
       <td>tenHangMuc</td>
