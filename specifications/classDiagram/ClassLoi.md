@@ -29,12 +29,23 @@
     </tr>
     <td colspan="4"></td>
     <tr>
-      <td rowspan="2">taoLoi</td>
-      <td rowspan="2">public</td>
+      <td rowspan="3">taoLoi</td>
+      <td rowspan="3">public</td>
       <td colspan="4">không có tham số</td>
-      <td rowspan="2">Bool</td>
-      <td rowspan="2">Tạo lỗi vi phạm của vận động viên trong một trận đấu loại</td>
+      <td rowspan="3">Bool</td>
+      <td rowspan="3">Tạo lỗi vi phạm của vận động viên trong một trận đấu loại</td>
     </tr>
-    <td colspan="4"></td>
+     <tr>
+      <td>thoiGian</td>
+      <td>Date</td>
+      <td>toDate()</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>phamLoi</td>
+      <td>String</td>
+      <td>null</td>
+      <td>100</td>
+    </tr>
 </table>
   

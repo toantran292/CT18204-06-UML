@@ -31,16 +31,24 @@
       <td colspan="4"></td>
     </tr>
     <tr>
-      <td rowspan="2">taoDiemSo</td>
-      <td rowspan="2">public</td>
+      <td rowspan="3">taoDiemSo</td>
+      <td rowspan="3">public</td>
       <td colspan="4">Không có tham số</td>
-      <td rowspan="2">Bool</td>
-      <td rowspan="2">Tạo điểm số ghi được của một vận động viên trong một trận đấu loại</td>
+      <td rowspan="3">Bool</td>
+      <td rowspan="3">Tạo điểm số ghi được của một vận động viên trong một trận đấu loại</td>
+    </tr>
+     <tr>
+      <td>thoiGian</td>
+      <td>Date</td>
+      <td>toDate()</td>
+      <td></td>
     </tr>
     <tr>
-      <td colspan="4"></td>
+      <td>diemSo</td>
+      <td>int</td>
+      <td>null</td>
+      <td></td>
     </tr>
-    
 </table>
 
 
