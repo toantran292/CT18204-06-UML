@@ -1,9 +1,9 @@
-# Đặc tả use case Lập lịch tập luyện đội
+# Đặc tả use case Lập lịch tập luyện
 
 <table>
     <tr>
         <th>Tên use case</th>
-        <th>Lập lịch tập luyện đội.</th>
+        <th>Lập lịch tập luyện.</th>
     </tr>
     <tr>
         <td>Tóm tắt</td>
@@ -39,7 +39,7 @@
             <ol type="1">
                 <li>Trưởng đoàn chọn chức năng lập lịch tập luyện trong giao diện quản lý đội.</li>
                 <li>Hệ thống hiện lên giao diện lập luyện của đội.</li>
-                <li>Trưởng đoàn nhập thời gian tập luyện mong muốn, nội dung tập luyện, và những vận động viên tham gia tập luyện.</li>
+                <li>Trưởng đoàn nhập thời gian tập luyện mong muốn, nội dung tập luyện,của đội nào và số lượng vận động viên tham gia.</li>
                 <li>Trưởng đoàn bấm nút xác nhận.</li>
                 <li>Hệ thống kiểm tra thời gian có hợp lệ.
                     <br/>
@@ -93,6 +93,6 @@
     </tr>
     <tr>
         <td>Kết quả</td>
-        <td>Hoàn thành lập lịch tập luyện toàn đội</td>
+        <td>Hoàn thành lập lịch tập luyện</td>
     </tr>
 </table>
