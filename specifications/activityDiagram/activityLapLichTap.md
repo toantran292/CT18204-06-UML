@@ -8,7 +8,7 @@ Sơ đồ này đặc tả cụ thể Use case "Lập lịch tập luyện"
 <br/>
 &nbsp;Trưởng đoàn chọn chức năng lập lịch tập luyện hệ thống chuyển sang giao diện lập lịch luyện.
 <br/>
-&nbsp; Trưởng đoàn nhập các thông tin về ngày tập luyện bao gồm ngày tập, nội dung tập, đội tập, số lượng vận động viên tham gia.
+&nbsp; Trưởng đoàn nhập các thông tin về ngày tập luyện bao gồm ngày tập, nội dung tập, đội tập, số lượng vận động viên tham gia.Nhấn chọn nút "Xác nhận".
 <br/>
 &nbsp; Hệ thống kiểm tra lịch tập hợp lệ không
 <br/>
