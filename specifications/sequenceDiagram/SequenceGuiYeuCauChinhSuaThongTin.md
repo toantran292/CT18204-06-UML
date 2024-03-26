@@ -21,7 +21,7 @@ Vận động viên đã đăng nhập thành công vào hệ thống và xem th
     
     a. Nếu thông tin hợp lệ
     
-    7. Hệ thống gửi yêu cầu cho Trưởng đoàn xử lý
+    7. Hệ thống lưu lại yêu cầu chờ xử lý
     8. Hệ thống gửi thông báo thành công
     9. Trình duyệt hiển thị thông báo lên màn hình
 

@@ -16,7 +16,7 @@
 | | 6.	Hệ thống kiểm tra thông tin | 
 | | **Có thể nhảy đến** | 
 | | A1 – Khi thông tin của vận động viên gửi đi không hợp lệ | 
-| | 7. Hệ thống gửi thông báo cho Trưởng đoàn xử lý | 
+| | 7. Hệ thống lưu lại yêu cầu chờ phê duyệt | 
 | | 8. Hệ thống gửi thông báo thành công về trình duyệt|
 | | 9. Trình duyệt hiển thị kết quả | 
 |Kịch bản thay thế|  **A1** – Khi thông tin của vận động viên gửi đi không hợp lệ|
