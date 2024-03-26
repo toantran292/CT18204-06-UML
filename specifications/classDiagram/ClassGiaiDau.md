@@ -54,6 +54,37 @@
       <td>50</td>
     </tr>
     <tr>
+      <td rowspan="5">kiemTraThongTin()</td>
+      <td rowspan="5">public</td>
+      <td colspan="4">Có 4 tham số</td>
+      <td rowspan="5">boolean</td>
+      <td rowspan="5">Kiểm tra thông tin của giải đấu. Trả về true nếu thông tin hợp lệ, false nếu không hợp lệ. </td>
+    </tr>
+    <tr>
+      <td>ten</td>
+      <td>String</td>
+      <td>null</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>ngayToChuc</td>
+      <td>Date</td>
+      <td>Date()</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>coCauGiaiThuong</td>
+      <td>String</td>
+      <td>null</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>trangThai</td>
+      <td>String</td>
+      <td>null</td>
+      <td>50</td>
+    </tr>
+    <tr>
       <td rowspan="2">suaThongTin()</td>
       <td rowspan="2">public</td>
       <td colspan="4">Không có tham số</td>
