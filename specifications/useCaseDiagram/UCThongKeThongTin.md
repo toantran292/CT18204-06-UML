@@ -2,7 +2,7 @@
 
 | Tên use case | Thống kê thông tin |
 | --- | ----- |
-| Tóm tắt | Cho phép Vận động viên gửi yêu cầu chỉnh sửa thông tin cá nhân của mình khi phát hiện sai sót |
+| Tóm tắt | Cho phép Quản trị viên thống kê các thông tin liên quan đến hệ thống |
 | Actor | Quản trị viên |
 | Ngày tạo | 16/03/2024 |
 | Version | 1 |
