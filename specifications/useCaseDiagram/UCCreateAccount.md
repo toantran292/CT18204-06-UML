@@ -45,6 +45,15 @@
                     <b>Có thể nhảy đến:</b>
                     <ol type="A" start="A">
                         <li>
+                           Quản trị viên không muốn tiếp tục tạo tài khoản
+                        </li>
+                    </ol>
+                </li>
+                <li>Quản trị viên nhấn nút tạo tài khoản</li>
+                </li>
+                    <b>Có thể nhảy đến:</b>
+                    <ol type="A" start="A">
+                        <li>
                            Hệ thống thông báo thông tin nhập vào không hợp lệ
                         </li>
                     </ol>
@@ -58,9 +67,19 @@
         <td>
         <ol type="A">
                 <li>
-                    Khi thông tin tài khoản nhập vào không hợp lệ</br>
+                    Quản trị viên không muốn tiếp tục tạo tài khoản</br>
                     Chuỗi A bắt đầu ở bước 5 của kịch bản thường.
                     <ol type="1" start="6">
+                        <li>Quản trị viên nhấn nút thoát</li>
+                        <li>Quá tình tạo tài khoản kết thúc và hệ thống chuyển hướng về giao diện quản lý người dùng</li>
+                    </ol>
+                </li>
+            </ol>
+        <ol type="A">
+                <li>
+                    Khi thông tin tài khoản nhập vào không hợp lệ</br>
+                    Chuỗi A bắt đầu ở bước 6 của kịch bản thường.
+                    <ol type="1" start="7">
                         <li>Hệ thống hiển thị lỗi và yêu cầu quản trị viên nhập laị thông tin tài khoản</li>
                     </ol>
                     Trở về bước 3 của kịch bản thường.

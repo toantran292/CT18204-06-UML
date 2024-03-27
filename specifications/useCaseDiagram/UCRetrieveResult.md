@@ -1,13 +1,13 @@
-# Đặc tả use case Xem diễn biến trận đấu
+# Đặc tả use case Xem diễn biến trận đấu loại
 
 <table>
     <tr>
         <th>Tên use case</th>
-        <th>Xem diễn biến trận đấu</th>
+        <th>Xem diễn biến trận đấu loại</th>
     </tr>
     <tr>
         <td>Tóm tắt</td>
-        <td>Cho phép người sử dụng xem diễn biến của trận đấu</td>
+        <td>Cho phép người sử dụng xem diễn biến của trận đấu loại</td>
     </tr>
     <tr>
         <td>Actor</td>
@@ -15,7 +15,7 @@
     </tr>
     <tr>
         <td>Phiên bản</td>
-        <td>1.0</td>
+        <td>1.4</td>
     </tr>
     <tr>
         <td>Chịu trách nhiệm</td>
@@ -27,7 +27,7 @@
     </tr>
     <tr>
         <td>Ngày cập nhật</td>
-        <td>21/03/2024</td>
+        <td>26/03/2024</td>
     </tr>
     <tr>
         <td>Điều kiện tiên quyết</td>
@@ -37,7 +37,7 @@
         <td>Kịch bản thường</td>
         <td>
             <ol type="1">
-                <li>Người dùng truy cập vào hệ thống và chọn vào danh mục trận đấu</li>
+                <li>Người dùng truy cập vào hệ thống và chọn vào danh mục trận đấu loại</li>
                 <li>
                     Hệ thống hiển thị danh sách trận đấu </br>
                     <b>Có thể nhảy đến: </b> </br>
@@ -64,7 +64,7 @@
                         </li>
                         <li>Hệ thống hiển thị danh sách trận đấu theo tên trận đấu người dùng cung cấp.</li>
                     </ol>
-                    Trở về bước 2 của kịch bản thường.
+                    Trở về bước 3 của kịch bản thường.
                 </li>
             </ol>
             <ol type="I">
