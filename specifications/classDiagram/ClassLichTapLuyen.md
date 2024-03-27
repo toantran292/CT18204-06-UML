@@ -6,7 +6,7 @@
 | idLichTap | private | String | null | 8 | | | id lịch tập luyện |
 | ngayTap | private | Date | Date() | |Date() | | Ngày tập luyện |
 | noiDung | private | String | null | | | | Nội dung tập luyện |
-| soLuong | private | int | 0 |  | | Count(List<DsVDV>) | Số lượng người tham gia|
+| diaChi | private | String | null |  | | | Địa chỉ tập luyện|
 
 ### 2. Phương thức
 
@@ -41,8 +41,8 @@
       <td colspan="1"></td>
     </tr>
     <tr>
-      <td colspan="1">soLuong</td>
-      <td colspan="1">int</td>
+      <td colspan="1">diaChi</td>
+      <td colspan="1">String</td>
       <td colspan="1">null</td>
       <td colspan="1"></td>
     </tr>

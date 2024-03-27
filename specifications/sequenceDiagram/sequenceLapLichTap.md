@@ -22,7 +22,7 @@ Sơ đồ này đặc tả cụ thể Use case "Lập lịch tập luyện"
     </li>
 
 **[Loop]**
-    <li>Trưởng Đoàn nhập thời gian tập luyện mong muốn, nội dung tập luyện,của đội nào và số lượng vận động viên tham gia.
+    <li>Trưởng Đoàn nhập thời gian tập luyện mong muốn, nội dung tập luyện,của đội nào và địa chỉ tập luyện.
     </li>
     <li>Trưởng đoàn bấm nút "Xác nhận".
     </li>
@@ -33,8 +33,11 @@ Sơ đồ này đặc tả cụ thể Use case "Lập lịch tập luyện"
 **[Rẽ nhánh]**
     <li>Nếu ngày nhập hợp lệ [KQ==true] thì gọi hàm lapLichDoi() với các tham số là các thông tin vừa nhập. Trở về giao diện quản lý đội, thông báo "Tạo lịch thành công". Thoát khỏi vòng lặp.Kết thúc
     </li>
-    <li>Ngược lại [KQ==false] thông báo "Thời gian không hợp lệ" tiếp tục òng lặp quay về **[Loop]**</li>
+    <li>Ngược lại [KQ==false] thông báo "Thời gian không hợp lệ"</li>
+    <li>Trưởng đoàn chọn chức năng cần thực hiện.</li>
 **[Tùy chọn]**
-    <li>Nếu trưởng đoàn chọn "Hủy" </li>
+    <li>Nếu trưởng đoàn chọn chức năng "Hủy" </li>
     <li>Quay về giao diện quản lý đội . Kết thúc vòng lặp.</li>
+    <li>Nếu trưởng đoàn không chọn thì tiếp tục vòng lặp quay về **[Loop]**
+    </li>
 </ol>
