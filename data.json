@@ -1,0 +1,23 @@
+{
+  "data": [
+    {
+      "tenTran": "TranMot",
+      "cacLoiViPham": [
+        {
+          "thoigian": "12:00",
+          "noidung": "sdjaldjksadlk"
+        },
+        //...
+      ],
+      "thanhTich": [
+        {
+          "thoiGian": "12:00",
+          "diemSo": 1.5
+        },
+        ...
+      ]
+    },
+    ...
+  ],
+  ...
+},
