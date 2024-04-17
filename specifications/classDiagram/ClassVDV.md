@@ -5,6 +5,9 @@
 |---|---|---|---|---|---|---|---|
 | chieuCao | private | number | 0 | | 0 | 3 |  Đơn vị: mét |
 | canNang | private | number | 0 | | 0 | 1000 | Đơn vị: kilogam |
+| nhomMau | private | string | null | 5 |  |  | Nhóm máu của VDV |
+| tinhTrangSucKhoe | private | string | null | 50 |  |  | Tình trạng sức khỏe của VDV (các chấn thương, bệnh,...) |
+| trangThai | private | string | null | 30 |  |  | Trạng thái của VDV (cấm thi đấu,...) |
 
 ### 2. Phương thức
 
@@ -26,50 +29,6 @@
       <td colspan="4">Có 0 tham số</td>
       <td>VDV</td>
       <td>Lấy thông tin của VDV</td>
-    </tr>
-    <!-- --------------------------yeuCauSuaThongTin------------------- -->
-    <tr>
-      <td rowspan="7">yeuCauSuaThongTin</td>
-      <td rowspan="7">public</td>
-      <td colspan="4">Có 6 tham số</td>
-      <td rowspan="7">bool</td>
-      <td rowspan="7">VDV gửi yêu cầu chỉnh sửa thông tin của mình</td>
-    </tr>
-    <tr>
-      <td>hoTen</td>
-      <td>string</td>
-      <td>null</td>
-      <td>30</td>
-    </tr>
-    <tr>
-      <td>gioiTinh</td>
-      <td>bool</td>
-      <td>null</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>ngaySinh</td>
-      <td>Date</td>
-      <td>null</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>sdt</td>
-      <td>string</td>
-      <td>null</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <td>canNang</td>
-      <td>number</td>
-      <td>null</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>chieuCao</td>
-      <td>number</td>
-      <td>null</td>
-      <td></td>
     </tr>
     <!-- --------layDSVDV-------------- -->
     <tr>

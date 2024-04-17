@@ -3,7 +3,6 @@
 ### 1. Thuộc tính 
 | Tên thuộc tính | Kiểu truy cập | Kiểu dữ liệu | Giá trị mặc nhiên | Kích thước| Min | Max | Diễn giải |
 |---|---|---|---|---|---|---|---|
-| idVaiTro | private | string | null | 8|  |  |   |
 | tenVaiTro | private | string | null | 30|  |  |   |
 
 ### 2. Phương thức

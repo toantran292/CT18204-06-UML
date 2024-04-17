@@ -1,4 +1,4 @@
-# Sơ đồ tuần tự "Gửi yêu cầu chỉnh sửa thông tin cá nhân
+# Sơ đồ tuần tự "Gửi yêu cầu chỉnh sửa thông tin cá nhân"
 
 ### I. Người thiết kế: 
 Khưu Thị Bích Ngọc - B2203514
@@ -13,11 +13,11 @@ Vận động viên đã đăng nhập thành công vào hệ thống và xem th
 [Loop]
 
 3. Vận động viên tiến hành nhập thông tin cần chỉnh sửa và biểu mẫu
-4. Vận động viên sau khi nhập thông tin cần sửa xong thì ấn gửi yêu cầu
+4. Vận động viên sau khi nhập tiêu đề và mô tả thông tin cần sửa vào biểu mẫu xong thì ấn gửi yêu cầu
 5. Hệ thống tiếp nhận biểu mẫu vừa được gửi đến
-6. Hệ thống tiến hành kiểm tra các thông tin của biểu mẫu có đúng ràng buộc của từng trường dữ liệu hay không
+6. Hệ thống tiến hành kiểm tra tính hợp lệ của thông tin đã gửi
     
-    [Điều kiện]
+    [Rẽ nhánh]
     
     a. Nếu thông tin hợp lệ
     

@@ -71,20 +71,6 @@
       <td>null</td>
       <td>8</td>
     </tr>
-    <!-- -----------------------------themDoi------------------- -->
-    <tr>
-      <td rowspan="2">themDoi</td>
-      <td rowspan="2">public</td>
-      <td colspan="4">Có 1 tham số</td>
-      <td rowspan="2">bool</td>
-      <td rowspan="2">Thêm 1 đội thi đấu vào đoàn</td>
-    </tr>
-    <tr>
-      <td>idDoi</td>
-      <td>string</td>
-      <td>null</td>
-      <td>8</td>
-    </tr>
     <!-- -----------------------------xoaDoi------------------- -->
      <tr>
       <td rowspan="2">xoaDoi</td>

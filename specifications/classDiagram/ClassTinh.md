@@ -5,6 +5,7 @@
 |---|---|---|---|---|---|---|---|
 | idTinh | private | string | null | 8|  |  |   |
 | tenTinh | private | string | null | 30|  |  |   |
+| cap | private | string | null | 20|  |  |   |
 
 ### 2. Phương thức
 
