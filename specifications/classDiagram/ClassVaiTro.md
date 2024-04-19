@@ -33,6 +33,25 @@
       <td>null</td>
       <td>30</td>
     </tr>
+    <tr>
+      <td rowspan="3">thietLapVaiTro</td>
+      <td rowspan="3">public</td>
+      <td colspan="4">Có 2 tham số</td>
+      <td rowspan="3">bool</td>
+      <td rowspan="3">Thiết lập vai trò của vận động viên trong đội hình mẫu</td>
+    </tr>
+    <tr>
+      <td>idVDV</td>
+      <td>string</td>
+      <td>null</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>tenVaiTro</td>
+      <td>string</td>
+      <td>null</td>
+      <td>30</td>
+    </tr>
 </table>
 
 
