@@ -3,7 +3,7 @@
 ### 1. Thuộc tính
 | Tên thuộc tính | Kiểu truy cập | Kiểu dữ liệu | Giá trị mặc nhiên | Kích thước| Min | Max | Diễn giải |
 |---|---|---|---|---|---|---|---|
-| phamLoi | private | string | null | 100 |  |  |  Lỗi mà vận động viên vi phạm trong một trận đấu loại |
+| phamLoi | public | string | null | 100 |  |  |  Lỗi mà vận động viên vi phạm trong một trận đấu loại |
 
 
 ### 2. Phương thức
@@ -29,23 +29,25 @@
     </tr>
     <td colspan="4"></td>
     <tr>
-      <td rowspan="3">taoLoi</td>
-      <td rowspan="3">public</td>
+      <td rowspan="2">taoLoi</td>
+      <td rowspan="2">public</td>
       <td colspan="4">không có tham số</td>
-      <td rowspan="3">Bool</td>
-      <td rowspan="3">Tạo lỗi vi phạm của vận động viên trong một trận đấu loại</td>
+      <td rowspan="2">Bool</td>
+      <td rowspan="2">Tạo lỗi vi phạm của vận động viên trong một trận đấu loại</td>
     </tr>
      <tr>
-      <td>thoiGian</td>
-      <td>Date</td>
-      <td>toDate()</td>
+      <td>loi</td>
+      <td>Loi</td>
+      <td></td>
       <td></td>
     </tr>
-    <tr>
-      <td>phamLoi</td>
-      <td>String</td>
-      <td>null</td>
-      <td>100</td>
+      <tr>
+      <td rowspan="2">thongKeLoi</td>
+      <td rowspan="2">public</td>
+      <td colspan="4">không có tham số</td>
+      <td rowspan="2">Bool</td>
+      <td rowspan="2">Thống kê lỗi vi phạm của vận động viên trong trận đấu</td>
     </tr>
+      <td colspan="4"></td>
 </table>
   
