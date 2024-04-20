@@ -3,7 +3,7 @@
 ### 1. Thuộc tính(Không có)
 | Tên thuộc tính | Kiểu truy cập | Kiểu dữ liệu | Giá trị mặc nhiên | Kích thước| Min | Max | Diễn giải |
 |---|---|---|---|---|---|---|---|
-| DiemSo| public | String | null | | | | Điểm số mà vận động viên đạt được cho một đội |
+| DiemSo| public | float | null | | | | Điểm số mà vận động viên đạt được cho một đội |
 
 ### 2. Phương thức
 
