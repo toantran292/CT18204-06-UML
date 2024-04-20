@@ -3,10 +3,10 @@
 ### 1. Thuộc tính
 | Tên thuộc tính | Kiểu truy cập | Kiểu dữ liệu | Giá trị mặc nhiên | Kích thước| Min | Max | Diễn giải |
 |---|---|---|---|---|---|---|---|
-| idSaoLuu | private | String | null | 8 | | | Mã của bản sao lưu |
-| duongDanBanSaoLuu | private | String | null | 100 | | | Đường dẫn nơi lưu trữ bản sao lưu hệ thống |
-| NgaySaoLuu | private | Date | toDate() | | | toDate() | Ngày sao lưu hệ thống |
-| thanhPhanSaoLuu | private | List< String > | null | | | | Các thành phần được sao lưu trong bản sao lưu hệ thống |
+| idSaoLuu | public | String | null | 8 | | | Mã của bản sao lưu |
+| duongDanBanSaoLuu | public | String | null | 100 | | | Đường dẫn nơi lưu trữ bản sao lưu hệ thống |
+| NgaySaoLuu | public | Date | toDate() | | | toDate() | Ngày sao lưu hệ thống |
+| thanhPhanSaoLuu | public | List< String > | null | | | | Các thành phần được sao lưu trong bản sao lưu hệ thống |
 
 
 
