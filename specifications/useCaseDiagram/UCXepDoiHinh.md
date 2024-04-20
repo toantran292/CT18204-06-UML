@@ -89,6 +89,6 @@
     </tr>
     <tr>
         <td>Kết quả</td>
-        <td>Cập nhật thành công  thông tin của vận động viên trong đội.</td>
+        <td>Xếp đội hình thành công.</td>
     </tr>
 </table>
