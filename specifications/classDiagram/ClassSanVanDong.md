@@ -2,10 +2,10 @@
 
 ### 1. Thuộc tính
 
-| Tên thuộc tính | Kiểu truy cập | Kiểu dữ liệu | Giá trị mặc nhiên | Kích thước | Min | Max | Diễn giải             |
-| -------------- | ------------- | ------------ | ----------------- | ---------- | --- | --- | --------------------- |
-| idSVD          | public        | String       | null              | 8          |     |     | id sân vận động       |
-| tenSVD         | public        | String       | null              | 100        |     |     | Tên của sân vận động0 |
+| Tên thuộc tính | Kiểu truy cập | Kiểu dữ liệu | Giá trị mặc nhiên | Kích thước | Min | Max | Diễn giải            |
+| -------------- | ------------- | ------------ | ----------------- | ---------- | --- | --- | -------------------- |
+| idSVD          | public        | String       | null              | 8          |     |     | id sân vận động      |
+| tenSVD         | public        | String       | null              | 100        |     |     | Tên của sân vận động |
 
 ### 2. Phương thức
 
