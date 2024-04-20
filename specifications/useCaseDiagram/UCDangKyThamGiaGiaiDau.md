@@ -50,6 +50,7 @@
                     A2 - Đăng ký tham gia không thành công
                 </li>
                 <li>Hệ thống thông báo đăng ký tham gia thành công</li>
+                <li>Hệ thống chuyển sang giao diện chi tiết giải đấu trước đó</li>
             </ol>
         </td>
     </tr>
