@@ -40,6 +40,8 @@
                 <li>Sau khi trưởng đoàn đăng nhập vào hệ thống, trưởng đoàn chọn vào danh mục danh sách giải đấu</li>
                 <li>Hệ thống chuyển sang giao diện danh sách giải đấu</li>
                 <li>Trưởng đoàn chọn giải đấu cần đăng ký tham gia</li>
+                <li>Hệ thống chuyển sang giao diện chi tiết giải đấu</li>
+                <li>Trưởng đoàn chọn vào chức năng đăng ký tham gia giải đấu</li>
                     <b>Có thể nhảy đến:</b></br>
                     A1 - Trưởng đoàn nhấn nút thoát
                 <li>Trưởng đoàn các chọn hạng mục tham gia thi đấu và các đội thi đấu ở các hạng mục đó</li>
@@ -55,15 +57,15 @@
      <td>Kịch bản thay thế</td>
         <td>
             <b>A1 - Nhấn vào nút thoát.</b></br>
-            Chuỗi A1 bắt đầu ở bước 4 của kịch bản thường.
-            <ol type="1" start="5">
-                <li>Hệ thống chuyển sang giao diện danh sách giải đấu trước đó</li>
+            Chuỗi A1 bắt đầu ở bước 5 của kịch bản thường.
+            <ol type="1" start="6">
+                <li>Hệ thống chuyển sang giao diện chi tiết giải đấu trước đó</li>
             </ol>
             <b>A2 - Đăng ký tham gia giải đấu không thành công</b></br>
-            Chuỗi A2 bắt đầu ở bước 5 của kịch bản thường.</br>
-            <ol type="1" start="6">
+            Chuỗi A2 bắt đầu ở bước 7 của kịch bản thường.</br>
+            <ol type="1" start="8">
                 <li>Thông báo đăng ký tham gia giải đấu không thành công</li>
-                  <li>Hệ thống chuyển sang giao diện danh sách giải đấu trước đó</li>
+                  <li>Hệ thống chuyển sang giao diện chi tiết giải đấu trước đó</li>
             </ol>
         </td>
     </tr>
