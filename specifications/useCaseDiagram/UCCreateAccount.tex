@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage[paperheight=29.7cm,paperwidth=21cm,right=2cm,left=1cm,top=2cm,bottom=2.5cm]{geometry}
+\usepackage[vietnamese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{array, multirow}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{lipsum} 
+\usepackage{enumitem}
+\usepackage{tabularray}
+\renewcommand{\arraystretch}{1.5} % Cell height scaling
+
+\DefTblrTemplate{contfoot-text}{default}{Tiếp tục bên trang tiếp theo}
+\DefTblrTemplate{conthead-text}{default}{(Tiếp tục)}
+
+\begin{document}
+
+% useCase
+
+\begin{longtblr}[caption = {Đặc tả usecase Tạo tài khoản người dùng},
+  label = {tab:usecase1-spec},]{colspec={|l|p{.7\linewidth}|}}
+  \hline
+  \textbf{Tên usecase} & \textbf{Tạo tài khoản người dùng}                                                                        \\\hline
+  Tóm tắt              & Cho phép quản trị viên tạo tài khoản cho trưởng ban tổ chức hoặc trưởng đoàn.                                            \\\hline
+  Actor                & Quản trị viên.                                                                          \\\hline
+  Phiên bản            & 1.1                                                                                          \\\hline
+  Chịu trách nghiệm    & Nguyễn Tuấn Đạt                                                                                 \\\hline
+  Ngày tạo             & 13/03/2024                                                                                   \\\hline
+  Ngày cập nhật        & 19/03/2024                                                                                   \\\hline
+  Điều kiện tiên quyết & Đã đăng nhập vào hệ thống bằng tài khoản của quản trị viên. \\\hline
+  Kịch bản thường      &
+  \begin{minipage}{\linewidth}
+    \vskip 4pt
+    \begin{enumerate}
+      \item Sau khi quản trị viên đăng nhập vào hệ thống, có thể chọn danh mục quản lý người dùng.
+      \item Hệ thống chuyển đến giao diện quản lý người dùng.
+      \item Quản trị viên chọn vào nút tạo tài khoản người dùng.
+      \item Hệ thống chuyển sang giao diện tạo tài khoản người dùng.      
+      \item Quản trị viên chọn vai trò cho người dùng bao gồm trưởng ban tổ chức hoặc trưởng đoàn và sau đó nhập đầy đủ thông tin tài khoản người dùng  \\
+            \textbf{Có thể nhảy đến}\\
+            \textbf{\textcolor{red}{A1}} -- Quản trị viên không tạo tài khoản nữa và nhấn nút thoát.
+      \item Quản trị viên nhấn nút tạo tài khoản.\\
+            \textbf{Có thể nhảy đến}\\
+            \textbf{\textcolor{red}{A2}} -- Hệ thống thông báo thông tin nhập vào không hợp lệ.
+      \item Hệ thống thông báo tạo tài khoản thành công.
+      \item Trở về giao diện quản lý người dùng trước đó.
+    \end{enumerate}
+    \vskip 1pt
+  \end{minipage}
+  \\\hline
+  Kịch bản thay thế    &
+  \begin{minipage}{\linewidth}
+    \vskip 4pt
+    \begin{enumerate}[label={\textbf{\textcolor{red}{A\arabic*}} --}, align=left, itemsep=-5pt]
+      \item  Quản trị viên không tạo tài khoản nữa và nhấn nút thoát.  \\
+            \vspace{-1.5em}
+            \begin{enumerate}[leftmargin=-5px, align=left, label=\arabic*.]
+              \setcounter{enumii}{5}
+              \item[]
+                    \hspace{-25px} Chuỗi A1 bắt đầu ở bước 5 của kịch bản thường.
+              \item Trở về giao diện quản lý người dùng trước đó.
+              \item[]
+            \end{enumerate}
+      \item Thông tin tài khoản nhập vào không hợp lệ. \\
+            \vspace{-1.5em}
+            \begin{enumerate}[leftmargin=-5px, align=left, label=\arabic*.]
+              \setcounter{enumii}{6}
+              \item[]
+                    \hspace{-25px} Chuỗi A2 bắt đầu ở bước 6 của kịch bản thường.
+              \item Hệ thống hiển thị lỗi nhập liệu cụ thể và yêu cầu quản trị viên nhập lại thông tin tài khoản người dùng.
+              \item Trở về bước 5 của kịch bản thường.  
+              \item[]
+            \end{enumerate}
+    \end{enumerate}
+    \vskip 1pt
+  \end{minipage}
+  \\\hline
+  Kịch bản lỗi         &                                                                                              \\\hline
+  Kết quả              & Tạo tài khoản người dùng thành công.                                                                 \\\hline
+\end{longtblr}
+
+
+\end{document}
