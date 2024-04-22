@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage[paperheight=29.7cm,paperwidth=21cm,right=2cm,left=1cm,top=2cm,bottom=2.5cm]{geometry}
+\usepackage[vietnamese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{array, multirow}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{lipsum} 
+\usepackage{enumitem}
+\usepackage{tabularray}
+\renewcommand{\arraystretch}{1.5} % Cell height scaling
+
+\DefTblrTemplate{contfoot-text}{default}{Tiếp tục bên trang tiếp theo}
+\DefTblrTemplate{conthead-text}{default}{(Tiếp tục)}
+
+\begin{document}
+
+% useCase
+
+\begin{longtblr}[caption = {Đặc tả usecase Duyệt yêu cầu chỉnh sửa thông tin},
+  label = {tab:usecase1-spec},]{colspec={|l|p{.7\linewidth}|}}
+  \hline
+  \textbf{Tên usecase} & \textbf{Duyệt yêu cầu chỉnh sửa thông tin}                                                                        \\\hline
+  Tóm tắt              & Duyệt yêu cầu sửa thông tin của vận động viên khi vận động viên gửi yêu cầu.                                            \\\hline
+  Actor                & Huấn luyện viên                                                                          \\\hline
+  Phiên bản            & 1.1                                                                                          \\\hline
+  Chịu trách nghiệm    & Trần Minh Trí                                                                                \\\hline
+  Ngày tạo             & 13/03/2024                                                                                   \\\hline
+  Ngày cập nhật        & 19/03/2024                                                                                   \\\hline
+  Điều kiện tiên quyết & Huấn luyện viên đã đăng nhập vào hệ thống. \\\hline
+  Kịch bản thường      &
+  \begin{minipage}{\linewidth}
+    \vskip 4pt
+    \begin{enumerate}
+      \item Huấn luyện viên chọn đơn yêu cầu của vận động viên.
+      \item Hệ thống hiển thị giao diện các đơn yêu cầu.
+      \item Huấn luyện viên chọn đơn yêu cầu của vận động viên.\\
+            \textbf{Có thể nhảy đến}\\
+            \textbf{\textcolor{red}{A1}} -- Huấn luyện viên nhấn nút không cập nhật.
+      \item Huấn luyện viên nhấn nút cập nhập.
+      \item Hệ thống cập nhật thông tin mới của vận động viên.Đổi trạng thái của đơn thành đã duyệt.
+      \item Hệ thống thông báo "Cập nhật thành công".
+      \item Hệ thống gửi thông báo đến cho vận động viên.
+      \item Hệ thống trở về giao diện các đơn yêu cầu.
+    \end{enumerate}
+    \vskip 1pt
+  \end{minipage}
+  \\\hline
+  Kịch bản thay thế    &
+  \begin{minipage}{\linewidth}
+    \vskip 4pt
+    \begin{enumerate}[label={\textbf{\textcolor{red}{A\arabic*}} --}, align=left, itemsep=-5pt]
+      \item  Huấn luyện viên nhấn nút không cập nhật.  \\
+            \vspace{-1.5em}
+            \begin{enumerate}[leftmargin=-5px, align=left, label=\arabic*.]
+              \setcounter{enumii}{3}
+              \item[]
+                    \hspace{-25px} Chuỗi A1 bắt đầu ở bước 3 của kịch bản thường.
+              \item Đổi trạng thái của đơn thành không thành công.
+              \item Hệ thống thông báo "Đơn bị từ chối".
+              \item Hệ thống gửi thông báo đến cho vận động viên.
+              \item[]
+                    \hspace{-25px} Trở về bước 2 của kịch bản thường.
+            \end{enumerate}
+    \end{enumerate}
+    \vskip 1pt
+  \end{minipage}
+  \\\hline
+  Kịch bản lỗi         &                                                                                              \\\hline
+  Kết quả              & Cập nhật thành công thông tin của vận động viên trong đội.                                                                 \\\hline
+\end{longtblr}
+
+
+\end{document}
