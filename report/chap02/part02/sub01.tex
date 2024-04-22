@@ -1,0 +1,94 @@
+\phantomsection
+\subsubsection{Use case "Cập nhật diễn biến trận đấu"}
+\setcounter{figure}{0}
+
+\begin{longtblr}[caption = {Đặc tả usecase Cập nhật diễn biến trận đấu},
+  label = {tab:usecase1-spec},]{colspec={|l|p{.7\linewidth}|}}
+  \hline
+  \textbf{Tên usecase} & \textbf{Cập nhật diễn biến trận đấu}                                                                                                \\\hline
+  Tóm tắt              & Cho phép Trưởng ban tổ chức cập nhật liên tục các diễn biến của trận đấu đang diễn ra lên hệ thống để người hâm mộ có thể theo dõi. \\\hline
+  Actor                & Trưởng ban tổ chức.                                                                                                                 \\\hline
+  Phiên bản            & 1.3                                                                                                                                 \\\hline
+  Chịu trách nghiệm    & Hà Ngọc Linh                                                                                                                        \\\hline
+  Ngày tạo             & 13/03/2024                                                                                                                          \\\hline
+  Ngày cập nhật        & 20/04/2024                                                                                                                          \\\hline
+  Điều kiện tiên quyết & Trưởng ban tổ chức được cấp tài khoản từ Quản trị viên và đăng nhập thành công vào hệ thống.                                        \\\hline
+  Kịch bản thường      &
+  \begin{minipage}{\linewidth}
+    \vskip 4pt
+    \begin{enumerate}
+      \item Trưởng ban tổ chức sau khi đăng nhập vào hệ thống thì chọn danh mục Quản lý trận đấu.
+      \item Hệ thống sẽ chuyển hướng đến giao diện Quản lý trận đấu.
+      \item Trưởng ban tổ chức chọn danh mục Cập nhật diễn biến trận đấu.
+      \item Hệ thống sẽ lấy danh sách giải đấu và hiển thị lên màn hình.
+      \item Trưởng ban tổ chức chọn giải đấu cần cập nhật.
+      \item Hệ thống sẽ lấy danh sách các trận đấu của giải đấu đó và hiển thị lên màn hình.
+      \item Trưởng ban tổ chức chọn trận đấu cần cập nhật.
+      \item Hệ thống sẽ lấy danh sách các đội tham gia trận đấu đó và hiển thị lên màn hình.\\
+            \textbf{Có thể nhảy đến}\\
+            \textbf{\textcolor{red}{A1}} -- Trận đấu đã kết thúc.
+      \item Trưởng ban tổ chức chọn đội cần cập nhật.
+      \item Hệ thống sẽ lấy danh sách các VDV của đội đó và hiển thị lên màn hình.
+      \item Trưởng ban tổ chức chọn VDV cần cập nhật.
+      \item Trưởng ban tổ chức chọn mục cần cập nhật là điểm hoặc lỗi. Sau đó tiến hành nhập các thông tin cần cập nhật.\\
+            \textbf{Có thể nhảy đến}\\
+            \textbf{\textcolor{red}{A2}} -- Không nhập nữa và nhất nút thoát.
+      \item Sau khi cập nhật thông tin xong nhấn vào nút cập nhật, hệ thống sẽ kiểm tra tính hợp lệ.\\
+            \textbf{Có thể nhảy đến}\\
+            \textbf{\textcolor{red}{A3}} -- Thông tin không hợp lệ.
+      \item Hệ thống đồng thời tiến hành lưu thay đổi và gửi thông báo diễn biến mới đến những người dùng có quan tâm đến trận đấu.
+      \item Thông báo cho Trưởng ban tổ chức thông tin được cập nhật thành công.
+      \item Hiển thị giao diện Quản lý trận đấu.
+    \end{enumerate}
+    \vskip 1pt
+  \end{minipage}
+  \\\hline
+  Kịch bản thay thế    &
+  \begin{minipage}{\linewidth}
+    \vskip 4pt
+    \begin{enumerate}[label={\textbf{\textcolor{red}{A\arabic*}} --}, align=left, itemsep=-5pt, start=2]
+      \item  Nhấn vào nút thoát.  \\
+            \vspace{-1.5em}
+            \begin{enumerate}[leftmargin=-5px, align=left, label=\arabic*.]
+              \setcounter{enumii}{12}
+              \item[]
+                    \hspace{-25px} Chuỗi A2 bắt đầu ở bước 12 của kịch bản thường.
+              \item Thông báo đã thoát giao diện Cập nhật diễn biến trận đấu.
+              \item[]
+                    \hspace{-25px} Trở về bước 2 của kịch bản thường.
+            \end{enumerate}
+      \item Thông tin không hợp lệ. \\
+            \vspace{-1.5em}
+            \begin{enumerate}[leftmargin=-5px, align=left, label=\arabic*.]
+              \setcounter{enumii}{13}
+              \item[]
+                    \hspace{-25px} Chuỗi A3 bắt đầu ở bước 13 của kịch bản thường.
+              \item Thông báo lỗi nhập liệu cụ thể cho Trưởng ban tổ chức.
+              \item[]
+                    \hspace{-25px} Trở về bước 12 của kịch bản thường.
+            \end{enumerate}
+    \end{enumerate}
+    \vskip 1pt
+  \end{minipage}
+  \\\hline
+  Kịch bản lỗi         &
+  \begin{minipage}{\linewidth}
+    \vskip 4pt
+    \begin{enumerate}[label={\textbf{\textcolor{red}{A\arabic*}} --}, align=left, itemsep=-5pt]
+      \item Trận đấu đã kết thúc. \\
+            \vspace{-1.5em}
+            \begin{enumerate}[leftmargin=-5px, align=left, label=\arabic*.]
+              \setcounter{enumii}{8}
+              \item[]
+                    \hspace{-25px} Chuỗi A1 bắt đầu ở bước 8 của kịch bản thường.
+              \item Báo lỗi trận đấu đã kết thúc và thoát giao diện Cập nhật diễn biến trận đấu.
+              \item Hệ thống chuyển hướng đến giao diện Quản lý trận đấu.
+              \item[]
+                    \hspace{-25px} Kết thúc tiến trình.
+            \end{enumerate}
+    \end{enumerate}
+    \vskip 1pt
+  \end{minipage}
+  \\\hline
+  Kết quả              & Cập nhật diễn biến trận đấu thành công lên hệ thống.                                                                                \\\hline
+\end{longtblr}

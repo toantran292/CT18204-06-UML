@@ -22,12 +22,15 @@
 \usepackage{enumitem}
 \usepackage{lipsum}
 \usepackage{textcase}
+\usepackage{tabularray}
+\usepackage{longtable}
 \usepackage[inkscape = inkscape -z -D, svgpath = fig/]{svg}
 
 \usetikzlibrary{calc}
 %Custom packages
 \usepackage{./config/heading}
 \usepackage{./config/fancy}
+\usepackage{./config/figure}
 
 \setlist{nolistsep}
 \renewcommand{\baselinestretch}{1.2}
@@ -41,21 +44,30 @@
 % Link to figure
 \newcommand{\myref}[1]{\textbf{\hyperref[#1]{Hình~\ref*{#1}}}}
 
-
-
+\DefTblrTemplate{contfoot-text}{default}{Tiếp tục bên trang tiếp theo}
+\DefTblrTemplate{conthead-text}{default}{(Tiếp tục)}
 
 % =========================== START DOCUMENT ==================================
 \begin{document}
 
 % \input{corverPage}
-% \input{list}
+\input{list}
 
 
 \pagenumbering{arabic}
 \input{chap01/chap01.tex}
 \newpage
-% \input{chapter02/index}
-% \newpage
+\input{chap02/chap02.tex}
+\newpage
+\input{chap03/chap03.tex}
+\newpage
+\input{chap04/chap04.tex}
+\newpage
+\input{chap05/chap05.tex}
+\newpage
+\input{chap06/chap06.tex}
+\newpage
+
 
 \phantomsection
 \setsection{Tài liệu tham khảo}
