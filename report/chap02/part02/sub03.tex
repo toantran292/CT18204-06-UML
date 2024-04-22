@@ -1,3 +1,55 @@
 \phantomsection
-\subsubsection{Use case ""}
+\subsubsection{Use case "Gửi yêu cầu chỉnh sửa thông tin cá nhân"}
 \setcounter{figure}{0}
+
+\begin{longtblr}[caption = {Đặc tả usecase Gửi yêu cầu chỉnh sửa thông tin cá nhân},
+  label = {tab:usecase3-spec},]{colspec={|l|p{.7\linewidth}|}}
+  \hline
+  \textbf{Tên usecase} & \textbf{Gửi yêu cầu chỉnh sửa thông tin cá nhân}                                               \\\hline
+  Tóm tắt              & Cho phép Vận động viên gửi yêu cầu chỉnh sửa thông tin cá nhân của mình khi phát hiện sai sót. \\\hline
+  Actor                & Vận động viên.                                                                                 \\\hline
+  Phiên bản            & 1.3                                                                                            \\\hline
+  Chịu trách nghiệm    & Khưu Thị Bích Ngọc                                                                             \\\hline
+  Ngày tạo             & 16/03/2024                                                                                     \\\hline
+  Ngày cập nhật        & 19/03/2024                                                                                     \\\hline
+  Điều kiện tiên quyết & Vận động viên đăng nhập thành công vào hệ thống và xem thông tin cá nhân của mình.             \\\hline
+  Kịch bản thường      &
+  \begin{minipage}{\linewidth}
+    \vskip 4pt
+    \begin{enumerate}
+      \item Vận động viên phát hiện thông tin cá nhân không đúng và chọn vào ô gửi yêu cầu chỉnh sửa thông tin cá nhân.
+      \item Hệ thống hiển thị giao diện biểu mẫu cho vận động viên nhập thông tin cần chỉnh sửa.
+      \item Vận động viên nhâp tiêu đề và nội dung mô tả thông tin bị sai kèm thông tin đúng cần sửa.
+      \item Vận động viên ấn gửi để gửi yêu cầu chỉnh sửa thông tin.
+      \item Thông tin được gửi lên hệ thống để kiểm tra.
+      \item Hệ thống kiểm tra thông tin. \\
+            \textbf{Có thể nhảy đến}\\
+            \textbf{\textcolor{red}{A1}} -- Khi thông tin của vận động viên gửi đi không hợp lệ.
+      \item Hệ thống lưu lại yêu cầu chờ phê duyệt.
+      \item Hệ thống gửi thông báo thành công về trình duyệt.
+      \item Trình duyệt hiển thị kết quả.
+    \end{enumerate}
+    \vskip 1pt
+  \end{minipage}
+  \\\hline
+  Kịch bản thay thế    &
+  \begin{minipage}{\linewidth}
+    \vskip 4pt
+    \begin{enumerate}[label={\textbf{\textcolor{red}{A\arabic*}} --}, align=left, itemsep=-5pt]
+      \item Khi thông tin của vận động viên gửi đi không hợp lệ. \\
+            \vspace{-1.5em}
+            \begin{enumerate}[leftmargin=-5px, align=left, label=\arabic*.]
+              \setcounter{enumii}{5}
+              \item[]
+                    \hspace{-25px} Chuỗi A1 bắt đầu ở bước 6 của kịch bản thường.
+              \item Trình duyệt hiển thị thông báo lỗi và yêu cầu nhập lại thông tin.
+              \item[]
+                    \hspace{-25px} Trở về bước 2 của kịch bản thường.
+            \end{enumerate}
+    \end{enumerate}
+    \vskip 1pt
+  \end{minipage}
+  \\\hline
+  Kịch bản lỗi         &                                                                                                \\\hline
+  Kết quả              & Thao tác gửi yêu cầu chỉnh sửa thông tin thành công.                                           \\\hline
+\end{longtblr}

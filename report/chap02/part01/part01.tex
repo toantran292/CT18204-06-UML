@@ -19,7 +19,8 @@ Sơ đồ use case tổng quát của hệ thống bao gồm các nhóm người
 
 \phantomsection
 \subsubsection{Chức năng của actor "Người dùng"}
-Người dùng bao gồm nhóm người dùng không có tài khoản hoặc không đăng nhập vào hệ thống nhưng có nhu cầu xem thông tin thể thao. Những chức năng của actor được mô tả như
+Người dùng là nhóm người dùng chưa đăng ký tài khoản hoặc chưa đăng nhập vào hệ thống nhưng có nhu cầu xem thông tin các giải đấu, trận đấu.
+Những chức năng của actor được mô tả như
 \myref{fig:uc-2}
 
 \begin{figure}[H]
@@ -61,7 +62,7 @@ Những chức năng của actor được mô tả như
 \begin{figure}[H]
   \centering
   \includesvg[inkscapelatex=false, width=\linewidth]{../uml/useCase/UseCaseNguoiDaDangNhap.svg}
-  \caption{Sơ đồ use case người dùng}
+  \caption{Sơ đồ use case người đã đăng nhập}
   \label{fig:uc-3}
 \end{figure}
 
@@ -96,7 +97,7 @@ Những chức năng của actor được mô tả như
 \begin{figure}[H]
   \centering
   \includesvg[inkscapelatex=false, width=\linewidth]{../uml/useCase/UseCaseVanDongVien.svg}
-  \caption{Sơ đồ use case người dùng}
+  \caption{Sơ đồ use case vận động viên}
   \label{fig:uc-4}
 \end{figure}
 
@@ -108,12 +109,86 @@ Cho phép Vận động viên gửi yêu cầu chỉnh sửa các thông tin ch�
 
 \phantomsection
 \subsubsection{Chức năng của actor "Huấn luyện viên"}
+Huấn luyện viên là nhóm người dùng có chức năng quản lý một đội thi đấu, khiếu nại về kết quả của trận đấu mà đội huấn luyện viên dẫn tham gia.
+Những chức năng của actor này được mô tả cụ thể như hình
+\myref{fig:uc-5}.
+
+\begin{figure}[H]
+  \centering
+  \includesvg[inkscapelatex=false, width=\linewidth]{../uml/useCase/UseCaseTruongBanToChuc.svg}
+  \caption{Sơ đồ use case huấn luyện viên}
+  \label{fig:uc-5}
+\end{figure}
+
+\noindent
+\textbf{Chức năng duyệt yêu cầu:}
+
+Cho phép huấn luyện viên duyệt yêu cầu và chỉnh sửa thông tin của vận động viên
+
+\noindent
+\textbf{Chức năng quản lý đội:}
+
+Cho phép huấn luyện viên có thể quản lý đội.
+
+\noindent
+\textbf{Chức năng quản lý đội hình:}
+
+Chọn đội hình thi đấu: Chọn đội hình từ đội hình mẫu thi đấu 1 trận đấu.\par
+Thiết lập vai trò vận động viên: Khi xếp đội hình huấn luyện viên thiết lập via trò cho tung vận động viên trong đội hình.\par
+Xếp đội hình: Huấn luyện viên có thể xếp đội hình mẫu để tham gia trận đấu
+
+
+\noindent
+\textbf{Chức năng gửi đơn khiếu nại:}
+
+Cho phép huấn luyện viên có thể gửi đơn khiếu nại cho trường ban tổ chức.
+
 
 \phantomsection
 \subsubsection{Chức năng của actor "Trưởng đoàn"}
+Trưởng đoàn là người chịu trách nhiệm quản lý tất cả thành viên trong đội, tài chính của đội ,và đăng kí giải đấu cho đội.
+Những chức năng của actor được mô tả như hình
+\myref{fig:uc-6}
+
+\begin{figure}[H]
+  \centering
+  \includesvg[inkscapelatex=false, width=\linewidth]{../uml/useCase/UseCaseTruongBanToChuc.svg}
+  \caption{Sơ đồ use case huấn luyện viên}
+  \label{fig:uc-6}
+\end{figure}
+
 
 \phantomsection
 \subsubsection{Chức năng của actor "Trưởng ban tổ chức"}
+
+Trưởng ban tổ chức là người chịu trách nhiệm chung trong việc lập kế hoạch, điều hành và quản lý quá trình tổ chức của một giải đấu thể thao.
+Những chức năng của actor này được mô tả cụ thể như hình
+\myref{fig:uc-7}.
+\begin{figure}[H]
+  \centering
+  \includesvg[inkscapelatex=false, width=\linewidth]{../uml/useCase/UseCaseTruongBanToChuc.svg}
+  \caption{Sơ đồ use case trưởng ban tổ chức}
+  \label{fig:uc-7}
+\end{figure}
+
+\noindent
+\textbf{Chức năng quản lý giải đấu:}
+
+Chức năng lập lịch giải đấu: Cho phép Trưởng ban tổ chức tạo lịch trình cho toàn bộ các trận đấu trong giải. Điều này bao gồm chọn ngày, giờ, và địa điểm cho mỗi trận đấu sao cho hợp lý và thuận tiện cho các đội tham gia.\par
+Chức năng tạo giải đấu: Cho phép Trưởng ban tổ chức tạo và thiết lập các thông tin cơ bản về giải đấu như tên, ngày bắt đầu, số lượng đội tham gia, và hình thức thi đấu,...\par
+Chức năng chỉnh sửa thông tin giải đấu: Cho phép Trưởng ban tổ chỉnh sửa các thông tin cơ bản về giải đấu như tên, ngày bắt đầu, số lượng đội tham gia, và hình thức thi đấu,...
+
+\noindent
+\textbf{Chức năng quản lý trận đấu:}
+
+Chức năng tạo trận đấu: Cho phép trưởng ban tổ chức tạo ra và thiết lập lịch trình cho mỗi trận đấu, bao gồm các thông tin như đội tham gia, thời gian, địa điểm,...\par
+Chức năng cập nhật diễn biến trận đấu: Cho phép trưởng ban tổ chức theo dõi và cập nhật diễn biến của mỗi trận đấu đang diễn ra. Bao gồm ghi nhận các bàn thắng, thẻ phạt,...
+
+\noindent
+\textbf{Chức năng duyệt đơn khiếu nại:}
+
+Trưởng ban tổ chức có trách nhiệm tiếp nhận và duyệt đơn khiếu nại này. Sau đó, họ phải xem xét và ra quyết định xử lý mỗi khiếu nại một cách công bằng và minh bạch, đảm bảo sự công bằng và tính chuyên nghiệp trong quá trình tổ chức giải đấu.
+
 
 \phantomsection
 \subsubsection{Chức năng của actor "Quản trị viên"}

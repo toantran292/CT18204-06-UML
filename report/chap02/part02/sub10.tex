@@ -1,3 +1,54 @@
 \phantomsection
-\subsubsection{Use case ""}
+\subsubsection{Use case "Đăng nhập"}
 \setcounter{figure}{0}
+
+
+\begin{longtblr}[caption = {Đặc tả usecase Đăng nhập},
+  label = {tab:usecase10-spec},]{colspec={|l|p{.7\linewidth}|}}
+  \hline
+  \textbf{Tên usecase} & \textbf{Đăng nhập}                                                                              \\\hline
+  Tóm tắt              & Cho phép người dùng đã được cấp tài khoản đăng nhập vào hệ thống.                               \\\hline
+  Actor                & Người dùng.                                                                                     \\\hline
+  Phiên bản            & 1.0                                                                                             \\\hline
+  Chịu trách nghiệm    & Trần Thái Toàn                                                                                  \\\hline
+  Ngày tạo             & 10/03/2024                                                                                      \\\hline
+  Ngày cập nhật        & 21/02/2024                                                                                      \\\hline
+  Điều kiện tiên quyết & Người dùng đã được cấp tài khoản trên hệ thống.                                                 \\\hline
+  Kịch bản thường      &
+  \begin{minipage}{\linewidth}
+    \vskip 4pt
+    \begin{enumerate}
+      \item  Người dùng chọn vào đăng nhập.
+      \item  Hệ thống hiển thị giao diện đăng nhập với biểu mẫu đăng nhập bao gồm nhập tên đăng nhập, mật khẩu.
+      \item  Người dùng nhập tên đăng nhập, mật khẩu và nhấn đăng nhập.
+      \item Hệ thống kiểm tra thông tin đăng nhập.  \\
+            \textbf{Có thể nhảy đến}\\
+            \textbf{\textcolor{red}{A1}} -- Người dùng nhập sai tên đăng nhập, mật khẩu.
+      \item Hệ thống hiển thị thông báo đăng nhập thành công.
+      \item Hệ thống chuyển hướng người dùng tới trang chủ với các chức năng hiển thị theo quyền hạn của tài khoản.
+    \end{enumerate}
+    \vskip 1pt
+  \end{minipage}
+  \\\hline
+  Kịch bản thay thế    &
+  \begin{minipage}{\linewidth}
+    \vskip 4pt
+    \begin{enumerate}[label={\textbf{\textcolor{red}{A\arabic*}} --}, align=left, itemsep=-5pt]
+      \item  Người dùng nhập sai tên đăng nhập, mật khẩu.  \\
+            \vspace{-1.5em}
+            \begin{enumerate}[leftmargin=-5px, align=left, label=\arabic*.]
+              \setcounter{enumii}{4}
+              \item[]
+                    \hspace{-25px} Chuỗi A bắt đầu ở bước 4 của kịch bản thường.
+              \item Hệ thống hiển thị thông báo đăng nhập thất bại do sai thông tin đăng nhập.
+              \item[]
+                    \hspace{-25px} Trở về bước 3 của kịch bản thường.
+            \end{enumerate}
+
+    \end{enumerate}
+    \vskip 1pt
+  \end{minipage}
+  \\\hline
+  Kịch bản lỗi         &                                                                                                 \\\hline
+  Kết quả              & Đăng nhập thành công và cho phép người dùng sử dụng các chức năng theo quyền hạn của tài khoản. \\\hline
+\end{longtblr}

@@ -1,3 +1,57 @@
 \phantomsection
-\subsubsection{Use case ""}
+\subsubsection{Use case "Xếp đội hình"}
 \setcounter{figure}{0}
+
+\begin{longtblr}[caption = {Đặc tả usecase Xếp đội hình},
+  label = {tab:usecase9-spec},]{colspec={|l|p{.7\linewidth}|}}
+  \hline
+  \textbf{Tên usecase} & \textbf{Xếp đội hình}                      \\\hline
+  Tóm tắt              & Xếp đội hình mẫu.                          \\\hline
+  Actor                & Huấn luyện viên                            \\\hline
+  Phiên bản            & 1.1                                        \\\hline
+  Chịu trách nghiệm    & Trần Minh Trí                              \\\hline
+  Ngày tạo             & 13/03/2024                                 \\\hline
+  Ngày cập nhật        & 19/03/2024                                 \\\hline
+  Điều kiện tiên quyết & Huấn luyện viên đã đăng nhập vào hệ thống. \\\hline
+  Kịch bản thường      &
+  \begin{minipage}{\linewidth}
+    \vskip 4pt
+    \begin{enumerate}
+      \item Huấn luyện viên vào giao diện quản lý đội hình.
+      \item Hệ thống hiển thị giao diện quản lý đội hình.
+      \item Huấn luyện viên chọn xếp đội hình.
+      \item Hệ thống hiển thị giao diện xếp đội hình.  \\
+            \textbf{Có thể nhảy đến}\\
+            \textbf{\textcolor{red}{A1}} --   Huấn luyện viên nhấn nút thoát.
+      \item Huấn luyện viên chọn vận động viên từ danh sách vận động viên.
+      \item Huấn luyện viên chọn vai trò cho vận động viên
+      \item Huấn luyện viên nhấn nút xong.
+      \item Hệ thống lưu vào đội hình mẫu.
+      \item Hệ thống thông báo "Xếp đội hình thành công".
+      \item Hệ thống hiển thị giao diện xếp đội hình.
+    \end{enumerate}
+    \vskip 1pt
+  \end{minipage}
+  \\\hline
+  Kịch bản thay thế    &
+  \begin{minipage}{\linewidth}
+    \vskip 4pt
+    \begin{enumerate}[label={\textbf{\textcolor{red}{A\arabic*}} --}, align=left, itemsep=-5pt]
+      \item  Huấn luyện viên nhấn nút thoát. \\
+            \vspace{-1.5em}
+            \begin{enumerate}[leftmargin=-5px, align=left, label=\arabic*.]
+              \setcounter{enumii}{4}
+              \item[]
+                    \hspace{-25px} Chuỗi A bắt đầu ở bước 4 của kịch bản thường.
+              \item Hệ thống thông báo "Các thay đổi chưa lưu".
+              \item[]
+                    \hspace{-25px} Trở về giao diện xếp đội hình.
+            \end{enumerate}
+    \end{enumerate}
+    \vskip 1pt
+  \end{minipage}
+  \\\hline
+  Kịch bản lỗi         &                                            \\\hline
+  Kết quả              & Xếp đội hình thành công.                   \\\hline
+\end{longtblr}
+

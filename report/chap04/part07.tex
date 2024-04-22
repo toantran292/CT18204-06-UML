@@ -1,24 +1,59 @@
 \phantomsection
-\subsection{Sơ đồ tuần tự "SEQUENCE"}
+\subsection{Sơ đồ tuần tự "Đăng ký tham gia giải đấu"}
 \setcounter{figure}{0}
 
-Chức năng "SEQUENCE" là một trong các chức năng của actor "". Chức năng này đã được thể hiện ở \myref{}. Sơ đồ tuần tự của chức năng này được thể hiện cụ thể ở \myref{} sau:
+Chức năng "Đăng ký tham gia giải đấu" là một trong các chức năng của actor "Trưởng đoàn".
+Chức năng này đã được thể hiện ở \myref{fig:uc-6}.
+Sơ đồ tuần tự của chức năng này được thể hiện cụ thể ở \myref{} sau:
 
-Người thiết kế:
-Sơ đồ này đã được đặc tả cục thể tại mô tả Use case "SEQUENCE" ở \myreftb{}
+Người thiết kế: Nguyễn Tuấn Đạt B2203499
+
+Sơ đồ này đã được đặc tả cục thể tại mô tả Use case
+"Đăng ký tham gia giải đấu" ở \myreftb{tab:usecase7-spec}
 
 \noindent
-\textbf{Mô tả chức năng:}
+\textbf{Mô tả chức năng:} Cho phép trưởng đoàn đăng ký tham gia giả đấu
 
 \noindent
-\textbf{Điều kiện tiên quyết:}
+\textbf{Điều kiện tiên quyết:} Cho phép trưởng đoàn đăng ký tham gia giả đấu
 
 \noindent
 \textbf{Trình tự thực hiện:}
 
 \noindent
 \begin{enumerate}
-  \item
+  \item Trưởng đoàn sau khi đăng nhập vào hệ thống thì chọn vào danh mục danh sách giải đấu
+  \item Hệ thống gọi phương thức layDSGiaiDau để lấy ra danh sách giải đấu
+  \item Cơ sở dữ liệu trả về danh sách giải đấu
+  \item Giao diện hiển thị danh sách giải đấu
+  \item Trưởng đoàn chọn giải đấu cần đăng ký tham gia
+  \item Hệ thống gọi phương thức layGiaiDauTheoId để lấy ra thông tin chi tiết giải đấu đã chọn
+  \item Cơ sơ dữ liệu trả về thông tin chi tiết giải đấu đã chọn
+  \item Hệ thống hiển thị giao diện chi tiết giải đấu
+  \item Trưởng đoàn chọn chức năng đăng ký tham gia giải đấu
+  \item Hiển thị giao diện đăng ký tham gia giải đấu
+        \\\textbf{[Loop]}
+  \item Trưởng đoàn không đăng ký tham gia nữa và nhấn nút thoát. \textbf{[Tùy chọn]}
+  \item Giao diện hiển thị chi tiết giải đấu trước đó
+  \item Trưởng đoàn nhấn nút thêm hạng mục thi đấu cần đăng ký
+  \item Hệ thống gọi phương thức layDSHangMuc để lấy ra danh sách hạng mục thi đấu
+  \item Cơ sở dữ liệu trả về danh sách hạng mục thi đấu
+  \item Giao diện hiển thị danh sách hạng mục thi đấu
+  \item Trưởng đoàn nhấn chọn hạng mục thi đấu cần tham gia
+  \item Trưởng đoàn nhấn vào nút thêm đội tham gia hạng mục đã chọn
+  \item Hệ thống gọi phương thức layDSDoiTheoDoan để lấy danh sách đội theo đoàn mà trưởng đoàn đang quản lý
+  \item Cơ sở dữ liệu trả về danh sách các đội theo đoàn mà trưởng đoàn đang quản lý
+  \item Giao diện hiển thị danh sách đội
+  \item Trưởng đoàn nhấn chọn các đội tham gia hạng mục đã chọn
+  \item Trưởng đoàn không đăng ký thêm hạng mục thi đấu và nhấn nút đăng ký tham gia. \textbf{[Tùy chọn]}
+  \item Hệ thống gọi phương thức DKGiaiDau để đăng ký giải đấu
+  \item Hệ thống trả về kết quả đăng ký giải đấu
+        \\\textbf{[Rẽ nhánh]}
+  \item Nếu đăng ký thành công [kq == true]. Thông báo đăng ký tham gia giải đấu thành công cho trưởng đoàn
+  \item Nếu đăng ký không thành công [kq == false]. Thông báo không thể đăng ký tham gia giải đấu cho trưởng đoàn
+  \item Giao diện hiển thị chi tiết trận đấu trước đó
+        \\\textbf{Kết thúc}
+
 \end{enumerate}
 
 \noindent

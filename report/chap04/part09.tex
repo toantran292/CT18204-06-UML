@@ -1,24 +1,43 @@
 \phantomsection
-\subsection{Sơ đồ tuần tự "SEQUENCE"}
+\subsection{Sơ đồ tuần tự "Xếp đội hình"}
 \setcounter{figure}{0}
 
-Chức năng "SEQUENCE" là một trong các chức năng của actor "". Chức năng này đã được thể hiện ở \myref{}. Sơ đồ tuần tự của chức năng này được thể hiện cụ thể ở \myref{} sau:
+Chức năng "Xếp đội hình" là một trong các chức năng của actor "".
+Chức năng này đã được thể hiện ở \myref{}.
+Sơ đồ tuần tự của chức năng này được thể hiện cụ thể ở \myref{} sau:
 
-Người thiết kế:
-Sơ đồ này đã được đặc tả cục thể tại mô tả Use case "SEQUENCE" ở \myreftb{}
+Người thiết kế: Trần Minh Trí
+
+Sơ đồ này đã được đặc tả cục thể tại mô tả Use case
+"Xếp đội hình" ở \myreftb{tab:usecase9-spec}
 
 \noindent
-\textbf{Mô tả chức năng:}
+\textbf{Mô tả chức năng:} Cho phép huấn luyện viên có thể xếp đội hình mẫu để tham gia trận đấu.
 
 \noindent
-\textbf{Điều kiện tiên quyết:}
+\textbf{Điều kiện tiên quyết:} Huấn luyện viên đã đăng nhập vào hệ thống.
 
 \noindent
 \textbf{Trình tự thực hiện:}
 
 \noindent
 \begin{enumerate}
-  \item
+      \item Sau khi Huấn luyện viên đăng nhập vào hệ thống ,Huấn luyện viên chọn chức năng quản lý đội hình.
+      \item Hệ thống chuyển hướng đến giao diện quản lý đội hình.
+      \item Huấn luyện viên chọn xếp đội hình.
+            \\\textbf{[Loop]}
+      \item Hệ thống chuyển hướng đến giao diện xếp đội hình.
+            \\\textbf{[Lựu chọn]}
+      \item Huấn luyện viên bấm nút thoát.
+      \item Hệ thống chuyển về giao diện xếp đội hình và kêt thúc vòng lặp \textbf{[Loop]}.
+      \item Gọi hàm layDSVDV() để lấy danh sách vận động viên gán và biến dsvdv.
+      \item Trả về biến dsvdv.
+      \item Chọn vận động viên
+      \item Chọn vai trò cho vận động viên
+      \item Huấn luyện viên bấm nút xong.
+      \item Gọi hàm thietLapVaiTro với tham số id của vận động viên và tên vai trò để thiết lập vai trò cho vận động viên.
+      \item Gửi thông báo xếp đội hình thành công và tiếp tục vòng lặp quay về \textbf{[Loop]}.
+            \\\textbf{[Kết thúc]}
 \end{enumerate}
 
 \noindent

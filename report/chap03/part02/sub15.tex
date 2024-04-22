@@ -1,0 +1,51 @@
+\phantomsection
+\subsubsection{Lớp NguoiDung}
+\setcounter{figure}{0}
+\setcounter{paragraph}{0}
+
+\phantomsection
+\paragraph{Mô tả thuộc tính của lớp NguoiDung}\mbox{}
+
+Các thuộc tính của lớp NguoiDung được mô tả như ở \myreftb{tab:class15-1-spec}
+
+\begin{adjustwidth}{-2cm}{-1cm}
+  \begin{longtblr}[caption = {Mô tả thuộc tính của lớp NguoiDung},
+    label = {tab:class15-1-spec},]{
+    width=1\linewidth, rowhead=1, hlines,vlines,
+    colspec={X[2,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[3,c]},
+    rows={1.5cm,m},
+    row{1}={font=\bfseries,c}}
+    Tên thuộc tính & Kiểu truy cập & Kiểu dữ liệu & Giá trị mặc nhiên & Kích thước & Min & Max      & Diễn giải                           \\
+    idTaiKhoan     & protected     & String       & Null              & 8          &     &          & id người dùng .                     \\
+    tenDangNhap    & protected     & String       & Null              & 30         &     &          & Tên đăng nhập hệ thống.             \\
+    matKhau        & protected     & String       & Null              & 30         &     &          & Mật khẩu đăng nhập                  \\
+    email          & protected     & String       & Null              & 30         &     &          & Eamil                               \\
+    hoTen          & protected     & String       & Null              & 30         &     &          & Họ và tên                           \\
+    gioiTinh       & protected     & boolean      & false             &            &     &          & Giới tính(true là nam, false là nữ) \\
+    ngaySinh       & protected     & Date         & toDay()           &            &     & toDate() & Ngày sinh                           \\
+    diaChi         & protected     & String       & null              & 30         &     &          & Địa chỉ                             \\
+    SDT            & protected     & String       & null              & 10         &     &          & Số điện thoại                       \\
+  \end{longtblr}
+\end{adjustwidth}
+
+\phantomsection
+\paragraph{Mô tả phương thức của lớp NguoiDung}\mbox{}
+
+Các phương thức của lớp NguoiDung được mô tả như ở \myreftb{tab:class15-2-spec}
+
+\begin{adjustwidth}{-2cm}{-1cm}
+  \begin{longtblr}[caption = {Mô tả phương thức của lớp NguoiDung},
+    label = {tab:class15-2-spec},]{
+    width=1\linewidth, rowhead=1, hlines,vlines,
+    colspec={X[3,c]X[1,c]X[3,c]X[1,c]X[1,c]X[1,c]X[2,c]X[3,c]},
+    rows={1.5cm,m},
+    row{1}={font=\bfseries,c}}
+    Tên phương thức                & Kiểu truy cập          & Danh sách các tham số        & Kiểu dữ liệu tham số & Giá trị mặc nhiên & Kích thước & Kiểu trả về của phương thức & Diễn giải                                                                                 \\
+    \SetCell[r=3]{} taoTaiKhoan()  & \SetCell[r=3]{} public & \SetCell[c=4]{} Có 2 tham số &                      &                   &            & \SetCell[r=3]{} TaiKhoan    & \SetCell[r=3]{} Tạo tài khoản người dùng.                                                 \\
+                                   &                        & tenDangNhap                  & String               & Null              & 30         &                             &                                                                                           \\
+                                   &                        & matKhau                      & String               & Null              & 30         &                             &                                                                                           \\
+    \SetCell[r=3]{} kiemTraHopLe() & \SetCell[r=3]{} public & \SetCell[c=4]{} Có 2 tham số &                      &                   &            & \SetCell[r=3]{} boolean     & \SetCell[r=3]{} Trả về kết quả kiểm tra, nếu tài khoản hợp lệ là true, ngược lại là false \\
+                                   &                        & tenDangNhap                  & String               & Null              & 30         &                             &                                                                                           \\
+                                   &                        & matKhau                      & String               & Null              & 30         &                             &                                                                                           \\
+  \end{longtblr}
+\end{adjustwidth}

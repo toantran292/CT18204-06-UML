@@ -1,0 +1,52 @@
+\phantomsection
+\subsubsection{Lớp Doi}
+\setcounter{figure}{0}
+\setcounter{paragraph}{0}
+
+\phantomsection
+\paragraph{Mô tả thuộc tính của lớp Doi}\mbox{}
+
+Các thuộc tính của lớp Doi được mô tả như ở \myreftb{tab:class17-1-spec}
+
+\begin{adjustwidth}{-2cm}{-1cm}
+  \begin{longtblr}[caption = {Mô tả thuộc tính của lớp Doi},
+    label = {tab:class17-1-spec},]{
+    width=1\linewidth, rowhead=1, hlines,vlines,
+    colspec={X[2,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[3,c]},
+    rows={1.5cm,m},
+    row{1}={font=\bfseries,c}}
+    Tên thuộc tính & Kiểu truy cập & Kiểu dữ liệu & Giá trị mặc nhiên & Kích thước & Min & Max & Diễn giải \\
+    idDoi          & private       & String       & Null              & 8          &     &     & id đội.   \\
+    tenDoi         & private       & String       & Null              & 30         &     &     & Tên đội.  \\
+  \end{longtblr}
+\end{adjustwidth}
+
+\phantomsection
+\paragraph{Mô tả phương thức của lớp Doi}\mbox{}
+
+Các phương thức của lớp Doi được mô tả như ở \myreftb{tab:class17-2-spec}
+
+\begin{adjustwidth}{-2cm}{-1cm}
+  \begin{longtblr}[caption = {Mô tả phương thức của lớp Doi},
+    label = {tab:class17-2-spec},]{
+    width=1\linewidth, rowhead=1, hlines,vlines,
+    colspec={X[3,c]X[1,c]X[3,c]X[1,c]X[1,c]X[1,c]X[2,c]X[3,c]},
+    rows={1.5cm,m},
+    row{1}={font=\bfseries,c}}
+    Tên phương thức                  & Kiểu truy cập          & Danh sách các tham số        & Kiểu dữ liệu tham số & Giá trị mặc nhiên & Kích thước & Kiểu trả về của phương thức & Diễn giải                                             \\
+    \SetCell[r=2]{} taoDoi()         & \SetCell[r=2]{} public & \SetCell[c=4]{} Có 1 tham số &                      &                   &            & \SetCell[r=2]{} boolean     & \SetCell[r=2]{} Tạo 1 đội thi đấu mới.                \\
+                                     &                        & tenDoi                       & String               & Null              & 30         &                             &                                                       \\
+    \SetCell[r=2]{} suaThongTinDoi() & \SetCell[r=2]{} public & \SetCell[c=4]{} Có 1 tham số &                      &                   &            & \SetCell[r=2]{} boolean     & \SetCell[r=2]{} Cập nhật thông tin của 1 đội thi đấu. \\
+                                     &                        & tenDoi                       & String               & Null              & 30         &                             &                                                       \\
+    \SetCell[r=2]{} themVDV()        & \SetCell[r=2]{} public & \SetCell[c=4]{} Có 1 tham số &                      &                   &            & \SetCell[r=2]{} boolean     & \SetCell[r=2]{} Thêm 1 VDV vào đội thi đấu.           \\
+                                     &                        & idVDV                        & String               & Null              & 8          &                             &                                                       \\
+    \SetCell[r=2]{} xoaVDV()         & \SetCell[r=2]{} public & \SetCell[c=4]{} Có 1 tham số &                      &                   &            & \SetCell[r=2]{} boolean     & \SetCell[r=2]{} Xóa 1 VDV khỏi đội thi đấu.           \\
+                                     &                        & idVDV                        & String               & Null              & 8          &                             &                                                       \\
+    \SetCell[r=2]{} inDSDoi()        & \SetCell[r=2]{} public & \SetCell[c=4]{} Có 1 tham số &                      &                   &            & \SetCell[r=2]{} boolean     & \SetCell[r=2]{} In danh sách tất cả đội.              \\
+                                     &                        & idVDV                        & String               & Null              & 8          &                             &                                                       \\
+    xoaDoi()                         & public                 & \SetCell[c=4]{} Có 0 tham số &                      &                   &            & boolean                     & Xóa 1 đội thi đấu.                                    \\
+    layThongTinDoi()                 & public                 & \SetCell[c=4]{} Có 0 tham số &                      &                   &            & Doi                         & Lấy thông tin của đội.                                \\
+    layDSDoi()                       & public                 & \SetCell[c=4]{} Có 0 tham số &                      &                   &            & List < Doi >                & Lấy danh sách tất cả các đội.                         \\
+    layDSVDV()                       & public                 & \SetCell[c=4]{} Có 0 tham số &                      &                   &            & List < VDV >                & Lấy danh sách tất cả các VDV có trong đội.            \\
+  \end{longtblr}
+\end{adjustwidth}

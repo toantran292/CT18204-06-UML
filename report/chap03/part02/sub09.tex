@@ -1,41 +1,23 @@
 \phantomsection
-\subsubsection{Lớp GiaiDau}
+\subsubsection{Lớp TranDauDaVong}
 \setcounter{figure}{0}
 \setcounter{paragraph}{0}
 
 \phantomsection
-\paragraph{Mô tả thuộc tính của lớp GiaiDau}\mbox{}
+\paragraph{Mô tả phương thức của lớp TranDauDaVong}\mbox{}
 
-Các thuộc tính của lớp GiaiDau được mô tả như ở \myreftb{}
-
-\begin{adjustwidth}{-2cm}{-1cm}
-  \begin{longtblr}[caption = {Mô tả thuộc tính của lớp DoiHinhMau},
-    label = {tab:class1-1-spec},]{
-    width=1\linewidth, rowhead=1, hlines,vlines,
-    colspec={X[2,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[3,c]},
-    rows={1.5cm,m},
-    row{1}={font=\bfseries,c}}
-    Tên thuộc tính & Kiểu truy cập & Kiểu dữ liệu & Giá trị mặc nhiên & Kích thước & Min & Max & Diễn giải             \\
-    id             & public        & String       & Null              & 8          &     &     & id của đội hình mẫu.  \\
-    tenDoiHinh     & public        & String       & Null              & 50         &     &     & Tên của đội hình mẫu. \\
-  \end{longtblr}
-\end{adjustwidth}
-
-\phantomsection
-\paragraph{Mô tả phương thức của lớp GiaiDau}\mbox{}
-
-Các phương thức của lớp GiaiDau được mô tả như ở \myreftb{}
+Các phương thức của lớp TranDauDaVong được mô tả như ở \myreftb{tab:class9-2-spec}
 
 \begin{adjustwidth}{-2cm}{-1cm}
-  \begin{longtblr}[caption = {Mô tả phương thức của lớp DoiHinhMau},
-    label = {tab:class1-2-spec},]{
+  \begin{longtblr}[caption = {Mô tả phương thức của lớp TranDauDaVong},
+    label = {tab:class9-2-spec},]{
     width=1\linewidth, rowhead=1, hlines,vlines,
     colspec={X[3,c]X[1,c]X[3,c]X[1,c]X[1,c]X[1,c]X[2,c]X[3,c]},
     rows={1.5cm,m},
     row{1}={font=\bfseries,c}}
-    Tên phương thức              & Kiểu truy cập          & Danh sách các tham số        & Kiểu dữ liệu tham số & Giá trị mặc nhiên & Kích thước & Kiểu trả về của phương thức & Diễn giải                                                                               \\
-    \SetCell[r=3]{} xepDoiHinh() & \SetCell[r=3]{} public & \SetCell[c=4]{} Có 2 tham số &                      &                   &            & \SetCell[r=3]{} boolean     & \SetCell[r=3]{} Xếp mộ đội hình mẫu mới. Trả về true nếu thành công false nếu thất bại. \\
-                                 &                        & tenDoiHinh                   & String               & Null              & 50         &                             &                                                                                         \\
-                                 &                        & dsVDV                        & List                 & Null              &            &                             &                                                                                         \\
+    Tên phương thức & Kiểu truy cập & Danh sách các tham số        & Kiểu dữ liệu tham số & Giá trị mặc nhiên & Kích thước & Kiểu trả về của phương thức & Diễn giải                                 \\
+    layDoiThang()   & public        & \SetCell[c=4]{} Có 0 tham số &                      &                   &            & Doi                         & Trả về Doi chiến thắng trong trận đấu đó. \\
+    layDoiMot()     & public        & \SetCell[c=4]{} Có 0 tham số &                      &                   &            & Doi                         & Trả về đội một cuả trận đấu.              \\
+    layDoiHai()     & public        & \SetCell[c=4]{} Có 0 tham số &                      &                   &            & Doi                         & Xóa đội thi đấu khỏi trận đấu             \\
   \end{longtblr}
 \end{adjustwidth}
