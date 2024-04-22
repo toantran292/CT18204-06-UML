@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage[paperheight=29.7cm,paperwidth=21cm,right=2cm,left=1cm,top=2cm,bottom=2.5cm]{geometry}
+\usepackage[vietnamese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{array, multirow}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{lipsum} 
+\usepackage{enumitem}
+\usepackage{tabularray}
+\renewcommand{\arraystretch}{1.5} % Cell height scaling
+
+\DefTblrTemplate{contfoot-text}{default}{Tiếp tục bên trang tiếp theo}
+\DefTblrTemplate{conthead-text}{default}{(Tiếp tục)}
+
+\begin{document}
+
+% CLASS DIAGRAM
+\begin{center}
+    
+
+Thuộc tính\\
+\begin{tabular}{|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|c|}
+     \hline
+     Tên thuộc tính & Kiểu truy cập & Kiểu dữ liệu & Giá trị mặc nhiên & Kích thước & Min & Max & Diễn giải \\\hline
+     ID & public & String & Null & 8 &  &  & ID của đội hình mẫu. \\\hline
+     tenDoiHinh & public & String & Null & 50 &  & & Tên của đội hình mẫu. \\\hline
+\end{tabular}
+
+\vspace{1cm}
+Phương thức\\
+\begin{tabular}{|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|c|}
+     \hline
+     Tên phương thức & Kiểu truy cập & Danh sách các tham số	& Kiểu dữ liệu tham số & Giá trị mặc nhiên & Kích thước & Kiểu trả về của phương thức & Diễn giải \\\hline
+     \multirow{3}{*}{xepDoiHinh()} & \multirow{3}{*}{public} & \multicolumn{4}{|c|}{Có 2 tham số} & \multirow{3}{*}{boolean} & \multirow{3}{*}{Xếp một đội hình mẫu mới. Trả về true nếu thành công false nếu thất bại.} \\\cline{3-6}
+     & & tenDoiDinh & String & Null & 50 & &\\\cline{3-6}
+     & & dsVDV & List & Null &  & &\\\hline
+\end{tabular}
+\setenumerate{align=left}
+\setenumerate{leftmargin=*}
+\vspace{1cm}
+
+\end{center}
+\end{document}
+

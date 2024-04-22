@@ -1,4 +1,4 @@
-# Sơ đồ tuần tự Gửi yêu cầu chỉnh sửa thông tin cá nhân
+# Sơ đồ tuần tự Tạo giải đấu
 
 ### I. Người thiết kế: 
 Hà Ngọc Linh B2207536
