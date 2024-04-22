@@ -7,15 +7,104 @@
 
 \phantomsection
 \subsubsection{Sơ đồ tổng quát}
+Sơ đồ use case tổng quát của hệ thống bao gồm các nhóm người dùng
+(actors) và các chức năng cơ bản của hệ thống được thể hiện ở \myref{fig:uc-1}
+
+\begin{figure}[H]
+  \centering
+  \includesvg[inkscapelatex=false, width=\linewidth]{../uml/useCase/UseCaseTongQuat.svg}
+  \caption{Sơ đồ use case tổng quát}
+  \label{fig:uc-1}
+\end{figure}
 
 \phantomsection
 \subsubsection{Chức năng của actor "Người dùng"}
+Người dùng bao gồm nhóm người dùng không có tài khoản hoặc không đăng nhập vào hệ thống nhưng có nhu cầu xem thông tin thể thao. Những chức năng của actor được mô tả như
+\myref{fig:uc-2}
+
+\begin{figure}[H]
+  \centering
+  \includesvg[inkscapelatex=false, width=\linewidth]{../uml/useCase/UseCaseNguoiDung.svg}
+  \caption{Sơ đồ use case người dùng}
+  \label{fig:uc-2}
+\end{figure}
+
+\noindent
+\textbf{Chức năng xem diễn biến}
+
+Người dùng có thể xem diễn biến của trận đấu hoặc giải đấu đang được diễn ra mà
+không cần đăng nhập.
+
+\noindent
+\textbf{Chức năng xem thông tin chi tiết}
+
+Cho phép người dùng có thể tra cứu các thông tin chi tiết về vận động viên,
+đội thi đấu, đoàn thi đấu và giải đấu ngoài ra trong giải đấu người dùng còn có
+thể xem lịch thi đấu và có quyền in lịch thi đấu mà không cần đăng nhập.
+
+\noindent
+\textbf{Chức năng đăng nhập}
+
+Cho phép người dùng đăng nhập vào hệ thống bằng tài khoản đã đăng ký hoặc được cấp.
+
+\noindent
+\textbf{Chức năng đăng ký}
+
+Cho phép người dùng đăng ký vào hệ thống.
 
 \phantomsection
 \subsubsection{Chức năng của actor "Người đã đăng nhập"}
+Người đã đăng nhập bao gồm nhóm người dùng đã đăng ký tài khoản hoặc được cấp tài khoản và đã đăng nhập vào hệ thống.
+Những chức năng của actor được mô tả như
+\myref{fig:uc-3}
+
+\begin{figure}[H]
+  \centering
+  \includesvg[inkscapelatex=false, width=\linewidth]{../uml/useCase/UseCaseNguoiDaDangNhap.svg}
+  \caption{Sơ đồ use case người dùng}
+  \label{fig:uc-3}
+\end{figure}
+
+\noindent
+\textbf{Chức năng đăng xuất}
+
+Cho phép người đã đăng nhập đăng xuất khỏi hệ thống
+
+\noindent
+\textbf{Chức năng xem thông tin cá nhân}
+
+Cho phép người đã đăng nhập xem thông tin tài khoản cá nhân.
+
+\noindent
+\textbf{Chức năng xem thông báo}
+
+Cho phép người đã đăng nhập xem các thông báo mới về các trận đấu hoặc giải đấu đang theo dõi
+
+\noindent
+\textbf{Chức năng theo dõi trận đấu giải đấu}
+
+Cho phép người đã đăng nhập theo dõi hoặc hủy theo dõi trận đấu, giải đấu sắp và đang diễn ra.
+
+
 
 \phantomsection
 \subsubsection{Chức năng của actor "Vận động viên"}
+Người đã đăng nhập bao gồm nhóm người dùng đã đăng ký tài khoản hoặc được cấp tài khoản và đã đăng nhập vào hệ thống.
+Những chức năng của actor được mô tả như
+\myref{fig:uc-4}
+
+\begin{figure}[H]
+  \centering
+  \includesvg[inkscapelatex=false, width=\linewidth]{../uml/useCase/UseCaseVanDongVien.svg}
+  \caption{Sơ đồ use case người dùng}
+  \label{fig:uc-4}
+\end{figure}
+
+
+\noindent
+\textbf{Chức năng gửi yêu cầu chỉnh sửa thông tin cá nhân}
+
+Cho phép Vận động viên gửi yêu cầu chỉnh sửa các thông tin chưa đúng với thật tế.
 
 \phantomsection
 \subsubsection{Chức năng của actor "Huấn luyện viên"}

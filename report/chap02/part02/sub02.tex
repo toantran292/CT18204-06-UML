@@ -3,64 +3,64 @@
 \setcounter{figure}{0}
 
 \begin{longtblr}[caption = {Đặc tả usecase Tạo giải đấu},
-  label = {tab:usecase1-spec},]{colspec={|l|p{.7\linewidth}|}}
-  \hline
-  \textbf{Tên usecase} & \textbf{Tạo giải đấu}                                                                        \\\hline
-  Tóm tắt              & Cho phép Trưởng ban tổ chức tạo một giải đấu mới.                                            \\\hline
-  Actor                & Trưởng ban tổ chức.                                                                          \\\hline
-  Phiên bản            & 1.1                                                                                          \\\hline
-  Chịu trách nghiệm    & Hà Ngọc Linh                                                                                 \\\hline
-  Ngày tạo             & 13/03/2024                                                                                   \\\hline
-  Ngày cập nhật        & 19/03/2024                                                                                   \\\hline
-  Điều kiện tiên quyết & Trưởng ban tổ chức được cấp tài khoản từ Quản trị viên và đăng nhập thành công vào hệ thống. \\\hline
-  Kịch bản thường      &
-  \begin{minipage}{\linewidth}
-    \vskip 4pt
-    \begin{enumerate}
-      \item Trưởng ban tổ chức sau khi đăng nhập vào hệ thống thì chọn danh mục Quản lý giải đấu.
-      \item Hệ thống sẽ chuyển hướng đến giao diện Quản lý giải đấu.
-      \item Trưởng ban tổ chức chọn danh mục Tạo giải đấu.
-      \item Hệ thống sẽ chuyển hướng đến giao diện Tạo giải đấu.
-      \item Trưởng ban tổ chức điền các thông tin để tạo giải đấu mới như: tên, ngày tổ chức, cơ cấu giải thưởng,...  \\
-            \textbf{Có thể nhảy đến}\\
-            \textbf{\textcolor{red}{A1}} -- Trưởng ban tổ chức không nhập nữa và nhấn vào nút thoát.
-      \item Sau khi chỉnh sửa xong chọn tạo giải đấu, hệ thống sẽ kiểm tra tính hợp lệ.\\
-            \textbf{Có thể nhảy đến}\\
-            \textbf{\textcolor{red}{A2}} -- Thông tin không hợp lệ.
-      \item Hệ thống tiến hành lưu thay đổi.Thông báo giải đấu được tạo thành công.
-      \item Trở về giao diện Quản lý giải đấu.
-    \end{enumerate}
-    \vskip 1pt
-  \end{minipage}
-  \\\hline
-  Kịch bản thay thế    &
-  \begin{minipage}{\linewidth}
-    \vskip 4pt
-    \begin{enumerate}[label={\textbf{\textcolor{red}{A\arabic*}} --}, align=left, itemsep=-5pt]
-      \item  Nhấn vào nút thoát.  \\
-            \vspace{-1.5em}
-            \begin{enumerate}[leftmargin=-5px, align=left, label=\arabic*.]
-              \setcounter{enumii}{5}
-              \item[]
-                    \hspace{-25px} Chuỗi A1 bắt đầu ở bước 5 của kịch bản thường.
-              \item Thông báo đã thoát giao diện tạo giải đấu.
-              \item[]
-                    \hspace{-25px} Trở về bước 2 của kịch bản thường.
+      label = {tab:usecase2-spec},]{colspec={|l|p{.7\linewidth}|}}
+      \hline
+      \textbf{Tên usecase} & \textbf{Tạo giải đấu}                                                                        \\\hline
+      Tóm tắt              & Cho phép Trưởng ban tổ chức tạo một giải đấu mới.                                            \\\hline
+      Actor                & Trưởng ban tổ chức.                                                                          \\\hline
+      Phiên bản            & 1.1                                                                                          \\\hline
+      Chịu trách nghiệm    & Hà Ngọc Linh                                                                                 \\\hline
+      Ngày tạo             & 13/03/2024                                                                                   \\\hline
+      Ngày cập nhật        & 19/03/2024                                                                                   \\\hline
+      Điều kiện tiên quyết & Trưởng ban tổ chức được cấp tài khoản từ Quản trị viên và đăng nhập thành công vào hệ thống. \\\hline
+      Kịch bản thường      &
+      \begin{minipage}{\linewidth}
+            \vskip 4pt
+            \begin{enumerate}
+                  \item Trưởng ban tổ chức sau khi đăng nhập vào hệ thống thì chọn danh mục Quản lý giải đấu.
+                  \item Hệ thống sẽ chuyển hướng đến giao diện Quản lý giải đấu.
+                  \item Trưởng ban tổ chức chọn danh mục Tạo giải đấu.
+                  \item Hệ thống sẽ chuyển hướng đến giao diện Tạo giải đấu.
+                  \item Trưởng ban tổ chức điền các thông tin để tạo giải đấu mới như: tên, ngày tổ chức, cơ cấu giải thưởng,...  \\
+                        \textbf{Có thể nhảy đến}\\
+                        \textbf{\textcolor{red}{A1}} -- Trưởng ban tổ chức không nhập nữa và nhấn vào nút thoát.
+                  \item Sau khi chỉnh sửa xong chọn tạo giải đấu, hệ thống sẽ kiểm tra tính hợp lệ.\\
+                        \textbf{Có thể nhảy đến}\\
+                        \textbf{\textcolor{red}{A2}} -- Thông tin không hợp lệ.
+                  \item Hệ thống tiến hành lưu thay đổi.Thông báo giải đấu được tạo thành công.
+                  \item Trở về giao diện Quản lý giải đấu.
             \end{enumerate}
-      \item Thông tin không hợp lệ. \\
-            \vspace{-1.5em}
-            \begin{enumerate}[leftmargin=-5px, align=left, label=\arabic*.]
-              \setcounter{enumii}{6}
-              \item[]
-                    \hspace{-25px} Chuỗi A2 bắt đầu ở bước 6 của kịch bản thường.
-              \item Thông báo lỗi nhập liệu cụ thể cho Trưởng ban tổ chức.
-              \item[]
-                    \hspace{-25px} Trở về bước 5 của kịch bản thường.
+            \vskip 1pt
+      \end{minipage}
+      \\\hline
+      Kịch bản thay thế    &
+      \begin{minipage}{\linewidth}
+            \vskip 4pt
+            \begin{enumerate}[label={\textbf{\textcolor{red}{A\arabic*}} --}, align=left, itemsep=-5pt]
+                  \item  Nhấn vào nút thoát.  \\
+                        \vspace{-1.5em}
+                        \begin{enumerate}[leftmargin=-5px, align=left, label=\arabic*.]
+                              \setcounter{enumii}{5}
+                              \item[]
+                                    \hspace{-25px} Chuỗi A1 bắt đầu ở bước 5 của kịch bản thường.
+                              \item Thông báo đã thoát giao diện tạo giải đấu.
+                              \item[]
+                                    \hspace{-25px} Trở về bước 2 của kịch bản thường.
+                        \end{enumerate}
+                  \item Thông tin không hợp lệ. \\
+                        \vspace{-1.5em}
+                        \begin{enumerate}[leftmargin=-5px, align=left, label=\arabic*.]
+                              \setcounter{enumii}{6}
+                              \item[]
+                                    \hspace{-25px} Chuỗi A2 bắt đầu ở bước 6 của kịch bản thường.
+                              \item Thông báo lỗi nhập liệu cụ thể cho Trưởng ban tổ chức.
+                              \item[]
+                                    \hspace{-25px} Trở về bước 5 của kịch bản thường.
+                        \end{enumerate}
             \end{enumerate}
-    \end{enumerate}
-    \vskip 1pt
-  \end{minipage}
-  \\\hline
-  Kịch bản lỗi         &                                                                                              \\\hline
-  Kết quả              & Tạo giải đấu mới thành công.                                                                 \\\hline
+            \vskip 1pt
+      \end{minipage}
+      \\\hline
+      Kịch bản lỗi         &                                                                                              \\\hline
+      Kết quả              & Tạo giải đấu mới thành công.                                                                 \\\hline
 \end{longtblr}
