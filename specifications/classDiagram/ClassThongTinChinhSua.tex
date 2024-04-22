@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage[paperheight=29.7cm,paperwidth=21cm,right=2cm,left=1cm,top=2cm,bottom=2.5cm]{geometry}
+\usepackage[vietnamese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{array, multirow}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{lipsum} 
+\usepackage{enumitem}
+\usepackage{tabularray}
+\renewcommand{\arraystretch}{1.5} % Cell height scaling
+
+\DefTblrTemplate{contfoot-text}{default}{Tiếp tục bên trang tiếp theo}
+\DefTblrTemplate{conthead-text}{default}{(Tiếp tục)}
+
+\begin{document}
+
+\begin{longtblr}[caption = {Mô tả thuộc tính của lớp ThongTinChinhSua},
+  label = {tab:class1-1-spec},]{
+  width=1\linewidth, rowhead=1, hlines,vlines,
+  colspec={X[2,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[3,c]},
+  rows={1.5cm,m},
+  row{1}={font=\bfseries,c}}
+  Tên thuộc tính & Kiểu truy cập & Kiểu dữ liệu & Giá trị mặc nhiên & Kích thước & Min & Max & Diễn giải             \\
+  idDon   & public        & String       & Null              & 8          &     &     & id đơn thông tin chỉnh sửa  .  \\
+  noiDung  & public        & String       & Null              & 100       &     &     & Nội dung của thông tin cần chỉnh sửa. \\
+
+\end{longtblr}
+  
+  \begin{longtblr}[caption = {Mô tả phương thức của lớp ThongTinChinhSua},
+  label = {tab:class1-2-spec},]{
+  width=1\linewidth, rowhead=1, hlines,vlines,
+  colspec={X[3,c]X[1,c]X[3,c]X[1,c]X[1,c]X[1,c]X[2,c]X[3,c]},
+  rows={1.5cm,m},
+  row{1}={font=\bfseries,c}}
+  Tên phương thức              & Kiểu truy cập          & Danh sách các tham số        & Kiểu dữ liệu tham số & Giá trị mặc nhiên & Kích thước & Kiểu trả về của phương thức & Diễn giải                                                                               \\
+  \SetCell[r=2]{} layDSDonThongTin() & \SetCell[r=2]{} public & \SetCell[c=4]{} Không có tham số &                      &                   &            & \SetCell[r=2]{} List < ThongTinChinhSua >     & \SetCell[r=2]{} Lấy danh sách các đơn yêu cầu chỉnh sửa. \\
+</table>
+                              &                         &                  &                &                &           &                             &                                                                                         \\
+
+  \SetCell[r=3]{} luuThongTinChinhSua() & \SetCell[r=3]{} public & \SetCell[c=4]{} Có 2 tham số &                      &                   &            & \SetCell[r=3]{} boolean    & \SetCell[r=3]{} Lưu thông tin chỉnh sửa. \\
+  </table>
+                                &                         & idVanDongVien                 & String               & Null               & 8          &                             &                                                                                         \\
+                                &                         & noiDung                   & String               & Null               & 100          &                             &                                                                                         \\
+  \end{longtblr}
+  \end{document}
