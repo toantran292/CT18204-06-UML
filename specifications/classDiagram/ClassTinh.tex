@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage[paperheight=29.7cm,paperwidth=21cm,right=2cm,left=1cm,top=2cm,bottom=2.5cm]{geometry}
+\usepackage[vietnamese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{array, multirow}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{lipsum} 
+\usepackage{enumitem}
+\usepackage{tabularray}
+\renewcommand{\arraystretch}{1.5} % Cell height scaling
+
+\DefTblrTemplate{contfoot-text}{default}{Tiếp tục bên trang tiếp theo}
+\DefTblrTemplate{conthead-text}{default}{(Tiếp tục)}
+
+\begin{document}
+
+\begin{longtblr}[caption = {Mô tả thuộc tính của lớp Tỉnh},
+  label = {tab:class1-1-spec},]{
+  width=1\linewidth, rowhead=1, hlines,vlines,
+  colspec={X[2,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[3,c]},
+  rows={1.5cm,m},
+  row{1}={font=\bfseries,c}}
+  Tên thuộc tính & Kiểu truy cập & Kiểu dữ liệu & Giá trị mặc nhiên & Kích thước & Min & Max & Diễn giải             \\
+  idTinh & private & string & null & 8&  &  & id tỉnh. \\
+  tenTinh & private & string & null & 30&  &  & Tên tỉnh. \\
+\end{longtblr}
+  
+  \begin{longtblr}[caption = {Mô tả phương thức của lớp Tỉnh},
+  label = {tab:class1-2-spec},]{
+  width=1\linewidth, rowhead=1, hlines,vlines,
+  colspec={X[3,c]X[1,c]X[3,c]X[1,c]X[1,c]X[1,c]X[2,c]X[3,c]},
+  rows={1.5cm,m},
+  row{1}={font=\bfseries,c}}
+  Tên phương thức              & Kiểu truy cập          & Danh sách các tham số        & Kiểu dữ liệu tham số & Giá trị mặc nhiên & Kích thước & Kiểu trả về của phương thức & Diễn giải                                                                               \\
+  \SetCell[r=2]{} layDSDoan() & \SetCell[r=2]{} public & \SetCell[c=4]{} Có 0 tham số &                      &                   &            & \SetCell[r=2]{} List < Doan >   & \SetCell[r=2]{} Lấy danh sách tất cả đoàn trong 1 tỉnh. \\
+</table>
+                              &                         &               &          &            &            &                             &                                                                                         \\
+  \SetCell[r=2]{} inDSTinh() & \SetCell[r=2]{} public & \SetCell[c=4]{} Có 0 tham số &                      &                   &            & \SetCell[r=2]{} boolean   & \SetCell[r=2]{} In danh sách tỉnh. \\
+  </table>
+                                &                         &               &          &            &            &                             &                                                                                         \\
+  \SetCell[r=2]{} taiDSTinhVietNam() & \SetCell[r=2]{} public & \SetCell[c=4]{} Có 1 tham số &                      &                   &            & \SetCell[r=2]{} boolean    & \SetCell[r=2]{} Tải thông tin 63 tỉnh thành lên hệ thống, trả về kết quả tải có thành công hay không. \\
+  </table>
+                                &                         & duLieu                 & List < String >              & Null               & 30        &                             &                                               \\  
+  \SetCell[r=2]{} suaThongTinTinh() & \SetCell[r=2]{} public & \SetCell[c=4]{} Có 1 tham số &                      &                   &            & \SetCell[r=2]{} boolean    & \SetCell[r=2]{} Sửa thông tin của 1 tỉnh. \\
+  </table>
+  &                         &                  & tenTinh               & String               & Null        & 30                            &                                               \\                                                  
+  \SetCell[r=2]{} layDSTinh() & \SetCell[r=2]{} public & \SetCell[c=4]{} Có 0 tham số &                      &                   &            & \SetCell[r=2]{} List < Tinh >    & \SetCell[r=2]{} Lấy danh sách tất cả các Tỉnh.  \\
+  </table>
+                                &                         &                  &                &                &         &                             &                                               \\                                           
+\end{longtblr}
+  \end{document}

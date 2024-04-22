@@ -15,27 +15,25 @@
 
 \begin{document}
 
-\begin{longtblr}[caption = {Mô tả thuộc tính của lớp HangMuc},
+\begin{longtblr}[caption = {Mô tả thuộc tính của lớp TaiTro},
   label = {tab:class1-1-spec},]{
   width=1\linewidth, rowhead=1, hlines,vlines,
   colspec={X[2,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[3,c]},
   rows={1.5cm,m},
   row{1}={font=\bfseries,c}}
   Tên thuộc tính & Kiểu truy cập & Kiểu dữ liệu & Giá trị mặc nhiên & Kích thước & Min & Max & Diễn giải             \\
-  idHangMuc   & public        & String       & Null              & 8          &     &     & id hạng mục thi đấu .  \\
-  tenHangMuc  & public        & String       & Null              &        &     &     & Tên hạng mục thi đấu. \\
+  id&public&String&null&8&&&ID một hợp đồng được tài trợ cho một giải đấu cụ thể. \\
 \end{longtblr}
   
-  \begin{longtblr}[caption = {Mô tả phương thức của lớp HangMuc},
+  \begin{longtblr}[caption = {Mô tả phương thức của lớp TaiTro},
   label = {tab:class1-2-spec},]{
   width=1\linewidth, rowhead=1, hlines,vlines,
   colspec={X[3,c]X[1,c]X[3,c]X[1,c]X[1,c]X[1,c]X[2,c]X[3,c]},
   rows={1.5cm,m},
   row{1}={font=\bfseries,c}}
   Tên phương thức              & Kiểu truy cập          & Danh sách các tham số        & Kiểu dữ liệu tham số & Giá trị mặc nhiên & Kích thước & Kiểu trả về của phương thức & Diễn giải                                                                               \\
-  \SetCell[r=3]{} taoHangMuc() & \SetCell[r=3]{} public & \SetCell[c=4]{} Có 2 tham số &                      &                   &            & \SetCell[r=3]{} boolean     & \SetCell[r=3]{} Trả về  kết quả nếu tạo được là true, ngược lại là false. \\
+  \SetCell[r=2]{} layDSTaiTro() & \SetCell[r=2]{} public & \SetCell[c=4]{} Không có tham số &                      &                   &            & \SetCell[r=2]{} List     & \SetCell[r=2]{} Lấy danh sách hợp đồng tài trợ của một nhà tài trợ cho giải đấu đang xét. \\
 </table>
-                              &                         & idMonTheThao                 & String               & Null               &           &                             &                                                                                         \\
-                              &                         & tenHangMuc                   & String               & Null               &           &                             &                                                                                         \\
+                               &                        &                  &                &            &        &                             &                                                                                         \\
   \end{longtblr}
   \end{document}

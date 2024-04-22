@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage[paperheight=29.7cm,paperwidth=21cm,right=2cm,left=1cm,top=2cm,bottom=2.5cm]{geometry}
+\usepackage[vietnamese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{array, multirow}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{lipsum} 
+\usepackage{enumitem}
+\usepackage{tabularray}
+\renewcommand{\arraystretch}{1.5} % Cell height scaling
+
+\DefTblrTemplate{contfoot-text}{default}{Tiếp tục bên trang tiếp theo}
+\DefTblrTemplate{conthead-text}{default}{(Tiếp tục)}
+
+\begin{document}
+
+\begin{longtblr}[caption = {Mô tả thuộc tính của lớp VongLoai},
+  label = {tab:class1-1-spec},]{
+  width=1\linewidth, rowhead=1, hlines,vlines,
+  colspec={X[2,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[3,c]},
+  rows={1.5cm,m},
+  row{1}={font=\bfseries,c}}
+  Tên thuộc tính & Kiểu truy cập & Kiểu dữ liệu & Giá trị mặc nhiên & Kích thước & Min & Max & Diễn giải             \\
+  idVongLoai & public & String & null & 8 & & & id vòng loại \\
+  tenVongLoai & public & String & null & 30 & & & tên vòng loại \\
+\end{longtblr}
+  
+  \begin{longtblr}[caption = {Mô tả phương thức của lớp VongLoai},
+  label = {tab:class1-2-spec},]{
+  width=1\linewidth, rowhead=1, hlines,vlines,
+  colspec={X[3,c]X[1,c]X[3,c]X[1,c]X[1,c]X[1,c]X[2,c]X[3,c]},
+  rows={1.5cm,m},
+  row{1}={font=\bfseries,c}}
+  Tên phương thức              & Kiểu truy cập          & Danh sách các tham số        & Kiểu dữ liệu tham số & Giá trị mặc nhiên & Kích thước & Kiểu trả về của phương thức & Diễn giải                                                                               \\
+  \SetCell[r=2]{} layDSTranDau() & \SetCell[r=2]{} public & \SetCell[c=4]{} Có 0 tham số &                      &                   &            & \SetCell[r=2]{}List< TranDauLoai >   & \SetCell[r=2]{} Lấy danh sách trận đấu của vòng loại đang xét. \\
+</table>
+                              &                         &                &          &            &         &                             &                                                                                         \\
+  \SetCell[r=2]{} themTranDauLoai() & \SetCell[r=2]{} public & \SetCell[c=4]{} Có 1 tham số &                      &                   &            & \SetCell[r=2]{}boolean   & \SetCell[r=2]{} Thêm trận đấu vào vòng đấu \\
+  </table>
+                                &                         & idTranDauLoai               & String         & Null           & 8           &                             &                                                          \\                              
+  \SetCell[r=2]{} xoaTranDauLoai() & \SetCell[r=2]{} public & \SetCell[c=4]{} Có 1 tham số &                      &                   &            & \SetCell[r=2]{}boolean   & \SetCell[r=2]{} Xóa trận đấu khỏi vòng đấu \\
+  </table>
+                          &                       &  idTranDauLoai               & String         & Null           & 8           &                             &                               \\                                 
+\end{longtblr}
+  \end{document}
