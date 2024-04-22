@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage[paperheight=29.7cm,paperwidth=21cm,right=2cm,left=1cm,top=2cm,bottom=2.5cm]{geometry}
+\usepackage[vietnamese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{array, multirow}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{lipsum} 
+\usepackage{enumitem}
+\usepackage{tabularray}
+\renewcommand{\arraystretch}{1.5} % Cell height scaling
+
+\DefTblrTemplate{contfoot-text}{default}{Tiếp tục bên trang tiếp theo}
+\DefTblrTemplate{conthead-text}{default}{(Tiếp tục)}
+
+\begin{document}
+
+% useCase
+
+\begin{longtblr}[caption = {Đặc tả usecase Xem thông tin cá nhân},
+  label = {tab:usecase1-spec},]{colspec={|l|p{.7\linewidth}|}}
+  \hline
+  \textbf{Tên usecase} & \textbf{Xem thông tin cá nhân}                                                                        \\\hline
+  Tóm tắt              & Cho phép người đã đăng nhập xem thông tin cá nhân của mình.                                            \\\hline
+  Actor                & 	Người đã đăng nhập.                                                                          \\\hline
+  Phiên bản            & 1.0                                                                                      \\\hline
+  Chịu trách nghiệm    & Khưu Thị Bích Ngọc                                                                                 \\\hline
+  Ngày tạo             & 16/03/2024                                                                                   \\\hline
+  Ngày cập nhật        &                                                                                    \\\hline
+  Điều kiện tiên quyết & Người dùng đã đăng nhập thành công vào hệ thống. \\\hline
+  Kịch bản thường      &
+  \begin{minipage}{\linewidth}
+    \vskip 4pt
+    \begin{enumerate}
+      \item  Người đã đăng nhập vào hệ thống muốn xem chi tiết thông tin cá nhân trên tài khoản của mình đã được cấp và chọn “Xem thông tin cá nhân” trên giao diện trang chủ.
+      \item  Hệ thống chuyển hướng đến trang Xem thông tin cá nhân.
+      \item  Người dùng sau khi xem thông tin xong và chọn thoát khỏi trang Xem thông tin cá nhân.
+      \item Hệ thống chuyển hướng đến trang chủ.
+    \end{enumerate}
+    \vskip 1pt
+  \end{minipage}
+  \\\hline
+  Kịch bản thay thế    &
+  \begin{minipage}{\linewidth}
+    \vskip 4pt
+    \vskip 1pt
+  \end{minipage}
+  \\\hline
+  Kịch bản lỗi         &                                                                                              \\\hline
+  Kết quả              & 	Người dùng xem được thông tin cá nhân.                                                                 \\\hline
+\end{longtblr}
+\end{document}
