@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[paperheight=29.7cm,paperwidth=21cm,right=2cm,left=1cm,top=2cm,bottom=2.5cm]{geometry}
+\usepackage[vietnamese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{array, multirow}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{lipsum} 
+\usepackage{enumitem}
+\usepackage{tabularray}
+\renewcommand{\arraystretch}{1.5} % Cell height scaling
+
+\DefTblrTemplate{contfoot-text}{default}{Tiếp tục bên trang tiếp theo}
+\DefTblrTemplate{conthead-text}{default}{(Tiếp tục)}
+
+\begin{document}
+
+% Class
+\begin{longtblr}[caption = {Mô tả thuộc tính của lớp DiemSo},
+label = {tab:class1-1-spec},]{
+width=1\linewidth, rowhead=1, hlines,vlines,
+colspec={X[2,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[3,c]},
+rows={1.5cm,m},
+row{1}={font=\bfseries,c}}
+Tên thuộc tính & Kiểu truy cập & Kiểu dữ liệu & Giá trị mặc nhiên & Kích thước & Min & Max & Diễn giải             \\
+DiemSo     & Public        & Float       & Null              & 50         &     &     & Điểm số mà vận động viên đạt được cho đội trong trận đấu \\
+\end{longtblr}
+
+\begin{longtblr}[caption = {Mô tả phương thức của lớp DoiHinhMau},
+label = {tab:class1-2-spec},]{
+width=1\linewidth, rowhead=1, hlines,vlines,
+colspec={X[3,c]X[1,c]X[3,c]X[1,c]X[1,c]X[1,c]X[2,c]X[3,c]},
+rows={1.5cm,m},
+row{1}={font=\bfseries,c}}
+Tên phương thức              & Kiểu truy cập          & Danh sách các tham số        & Kiểu dữ liệu tham số & Giá trị mặc nhiên & Kích thước & Kiểu trả về của phương thức & Diễn giải                                                                               \\
+\SetCell[r=1]{} layDSDiemSo() & \SetCell[r=1]{} Public & \SetCell[c=4]{} Không có tham số &                      &                   &            & \SetCell[r=1]{} Boolean     & \SetCell[r=1]{} Lấy ra danh sách điểm số của vận động viên đạt được cho đội trong trận đấu. \\
+
+\SetCell[r=2]{} taoDiemSo() & \SetCell[r=2]{} Public & \SetCell[c=4]{} Không có tham số &                      &                   &            & \SetCell[r=2]{} Boolean     & \SetCell[r=2]{} Tạo điểm số mà vận động viên đạt được cho đội trong trận đấu. \\
+                             &                        & tenDoiHinh                   & String               & Null              & 50         &                             &                                                                                                                                                                                     \\
+\end{longtblr}
+\end{document}

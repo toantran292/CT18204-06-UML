@@ -1,4 +1,4 @@
-# Đặc tả class HangMuc
+# Đặc tả class SaoLuuHeThong
 
 ### 1. Thuộc tính
 
