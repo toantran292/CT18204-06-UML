@@ -1,0 +1,59 @@
+\phantomsection
+\subsubsection{Lớp GiaiDau}
+\setcounter{figure}{0}
+\setcounter{paragraph}{0}
+
+\phantomsection
+\paragraph{Mô tả thuộc tính của lớp GiaiDau}\mbox{}
+
+Các thuộc tính của lớp GiaiDau được mô tả như ở \myreftb{tab:class2-1-spec}
+
+\begin{adjustwidth}{-2cm}{-1cm}
+  \begin{longtblr}[caption = {Mô tả thuộc tính của lớp GiaiDau},
+    label = {tab:class2-1-spec},]{
+    width=1\linewidth, rowhead=1, hlines,vlines,
+    colspec={X[2,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[3,c]},
+    rows={1.5cm,m},
+    row{1}={font=\bfseries,c}}
+    Tên thuộc tính    & Kiểu truy cập & Kiểu dữ liệu & Giá trị mặc nhiên & Kích thước & Min & Max & Diễn giải                         \\
+    ID                & public        & String       & Null              & 8          &     &     & ID của giải đấu.                  \\
+    ten               & public        & String       & Null              & 50         &     &     & Tên của giải đấu.                 \\
+    ngayToChuc        & public        & Date         & Date()            &            &     &     & Ngày tổ chức của giải đấu.        \\
+    coCauGiaiThu\-ong & public        & String       & Null              & 1000       &     &     & Cơ cấu giải thưởng của giải đấu.  \\
+    trangThai         & public        & String       & Null              & 50         &     &     & Trạng thái hiện tại của giải đấu. \\
+  \end{longtblr}
+\end{adjustwidth}
+
+\phantomsection
+\paragraph{Mô tả phương thức của lớp GiaiDau}\mbox{}
+
+Các phương thức của lớp GiaiDau được mô tả như ở \myreftb{tab:class2-2-spec}
+
+\begin{adjustwidth}{-2cm}{-1cm}
+  \begin{longtblr}[caption = {Mô tả phương thức của lớp GiaiDau},
+    label = {tab:class2-2-spec},]{
+    width=1\linewidth, rowhead=1, hlines,vlines,
+    colspec={X[3,c]X[1,c]X[3,c]X[1,c]X[1,c]X[1,c]X[2,c]X[3,c]},
+    rows={1.5cm,m},
+    row{1}={font=\bfseries,c}}
+
+    Tên phương thức                      & Kiểu truy cập          & Danh sách các tham số             & Kiểu dữ liệu tham số & Giá trị mặc nhiên & Kích thước & Kiểu trả về của phương thức & Diễn giải                                                                                                  \\
+    \SetCell[r=5]{} taoGiaiDau()         & \SetCell[r=5]{} public & \SetCell[c=4]{} Có 5 tham số      &                      &                   &            & \SetCell[r=5]{} boolean     & \SetCell[r=5]{h} Tạo giải đấu mới. Trả về true nếu thành công, false\- nếu thất bại.                       \\
+                                         &                        & ten                               & String               & Null              & 50         &                             &                                                                                                            \\
+                                         &                        & ngayToChuc                        & Date                 & Date()            &            &                             &                                                                                                            \\
+                                         &                        & coCauGiaiThuong                   & String               & Null              & 1000       &                             &                                                                                                            \\
+                                         &                        & trangThai                         & String               & Null              & 10         &                             &                                                                                                            \\
+    \SetCell[r=5]{} kiemTraThongTi\-n()  & \SetCell[r=5]{} public & \SetCell[c=4]{} Có 5 tham số      &                      &                   &            & \SetCell[r=5]{} boolean     & \SetCell[r=5]{} Kiểm tra thông tin của giải đấu. Trả về true nếu thông tin hợp lệ, false nếu không hợp lệ. \\
+                                         &                        & ten                               & String               & Null              & 50         &                             &                                                                                                            \\
+                                         &                        & ngayToChuc                        & Date                 & Date()            &            &                             &                                                                                                            \\
+                                         &                        & coCauGiaiThuong                   & String               & Null              & 1000       &                             &                                                                                                            \\
+                                         &                        & trangThai                         & String               & Null              & 10         &                             &                                                                                                            \\
+    suaThongTin()                        & public                 & \SetCell[c=4]{}  Không có tham số &                      &                   &            & boolean                     & Sửa thông tin của giải đấu. Trả về true nếu thành công, false nếu thất bại.                                \\
+    inThongTin()                         & public                 & \SetCell[c=4]{}  Không có tham số &                      &                   &            & boolean                     & In thông tin của giải đấu. Trả về true nếu thành công, false nếu thất bại.                                 \\
+    layDSGiaiDau()                       & public                 & \SetCell[c=4]{}  Không có tham số &                      &                   &            & boolean                     & Trả về danh sách giải đấu.                                                                                 \\
+    \SetCell[r=2]{} layDSDoi()           & \SetCell[r=2]{} public & \SetCell[c=4]{} Có 1 tham số      &                      &                   &            & \SetCell[r=2]{} boolean     & \SetCell[r=2]{} Trả về danh sách đội của giải đấu.                                                         \\
+                                         &                        & idGiaiDau                         & String               & Null              & 8          &                             &                                                                                                            \\
+    \SetCell[r=2]{} layGiaiDauTheo\-ID() & \SetCell[r=2]{} public & \SetCell[c=4]{} Không có tham số  &                      &                   &            & \SetCell[r=2]{} boolean     & \SetCell[r=2]{} Trả về giải đấu theo ID đội của giải đấu.                                                  \\
+                                         &                        & idGiaiDau                         & String               & Null              & 8          &                             &                                                                                                            \\
+  \end{longtblr}
+\end{adjustwidth}

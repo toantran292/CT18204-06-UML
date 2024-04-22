@@ -1,0 +1,50 @@
+\phantomsection
+\subsubsection{Lớp NhaTaiTro}
+\setcounter{figure}{0}
+\setcounter{paragraph}{0}
+
+\phantomsection
+\paragraph{Mô tả thuộc tính của lớp NhaTaiTro}\mbox{}
+
+Các thuộc tính của lớp NhaTaiTro được mô tả như ở \myreftb{tab:class3-1-spec}
+
+\begin{adjustwidth}{-2cm}{-1cm}
+  \begin{longtblr}[caption = {Mô tả thuộc tính của lớp NhaTaiTro},
+    label = {tab:class3-1-spec},]{
+    width=1\linewidth, rowhead=1, hlines,vlines,
+    colspec={X[2,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[3,c]},
+    rows={1.5cm,m},
+    row{1}={font=\bfseries,c}}
+    Tên thuộc tính & Kiểu truy cập & Kiểu dữ liệu & Giá trị mặc nhiên & Kích thước & Min & Max & Diễn giải                       \\
+    ID             & public        & String       & Null              & 8          &     &     & ID của nhà tài trợ.             \\
+    tenNhaTaiTro   & public        & String       & Null              & 50         &     &     & Tên của nhà tài trợ.            \\
+    logo           & public        & String       & Null              & 50         &     &     & Logo của nhà tài trợ.           \\
+    diaChi         & public        & String       & Null              & 100        &     &     & Địa chỉ của nhà tài trợ.        \\
+    trangWeb       & public        & String       & Null              & 100        &     &     & Link trang web của nhà tài trợ. \\
+    SDT            & public        & String       & Null              & 10         &     &     & Số điện thoại của nhà tài trợ.  \\
+  \end{longtblr}
+\end{adjustwidth}
+
+\phantomsection
+\paragraph{Mô tả phương thức của lớp NhaTaiTro}\mbox{}
+
+Các phương thức của lớp NhaTaiTro được mô tả như ở \myreftb{tab:class3-2-spec}
+
+\begin{adjustwidth}{-2cm}{-1cm}
+  \begin{longtblr}[caption = {Mô tả phương thức của lớp NhaTaiTro},
+    label = {tab:class3-2-spec},]{
+    width=1\linewidth, rowhead=1, hlines,vlines,
+    colspec={X[3,c]X[1,c]X[3,c]X[1,c]X[1,c]X[1,c]X[2,c]X[3,c]},
+    rows={1.5cm,m},
+    row{1}={font=\bfseries,c}}
+    Tên phương thức                 & Kiểu truy cập          & Danh sách các tham số            & Kiểu dữ liệu tham số & Giá trị mặc nhiên & Kích thước & Kiểu trả về của phương thức & Diễn giải                                                                         \\
+    \SetCell[r=6]{} themNhaTaiTro() & \SetCell[r=6]{} public & \SetCell[c=4]{} Có 5 tham số     &                      &                   &            & \SetCell[r=6]{} boolean     & \SetCell[r=6]{} Thêm Nhà tài trợ. Trả về true nếu thành công, false nếu thất bại. \\
+                                    &                        & tenNhaTaiTro                     & String               & Null              & 50         &                             &                                                                                   \\
+                                    &                        & logo                             & String               & Null              & 50         &                             &                                                                                   \\
+                                    &                        & diaChi                           & String               & Null              & 100        &                             &                                                                                   \\
+                                    &                        & trangWeb                         & String               & Null              & 100        &                             &                                                                                   \\
+                                    &                        & SDT                              & String               & Null              & 10         &                             &                                                                                   \\
+    xoaNhaTaiTro()                  & public                 & \SetCell[c=4]{} Không có tham số &                      &                   &            & boolean                     & Xóa Nhà tài trợ. Trả về true nếu thành công, false nếu thất bại.                  \\
+    chinhSua()                      & public                 & \SetCell[c=4]{} Không có tham số &                      &                   &            & boolean                     & Chỉnh sửa thông tin Nhà tài trợ. Trả về true nếu thành công, false nếu thất bại.  \\
+  \end{longtblr}
+\end{adjustwidth}

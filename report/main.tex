@@ -16,7 +16,6 @@
 \usepackage{xcolor}
 \usepackage{listings}
 \usepackage{tocloft}
-\usepackage[unicode]{hyperref}
 \usepackage{xparse}
 \usepackage{forloop}
 \usepackage{enumitem}
@@ -24,6 +23,7 @@
 \usepackage{textcase}
 \usepackage{tabularray}
 \usepackage{longtable}
+\usepackage{changepage}
 \usepackage[inkscape = inkscape -z -D, svgpath = fig/]{svg}
 
 \usetikzlibrary{calc}
@@ -42,7 +42,9 @@
 
 
 % Link to figure
+\usepackage[unicode]{hyperref}
 \newcommand{\myref}[1]{\textbf{\hyperref[#1]{Hình~\ref*{#1}}}}
+\newcommand{\myreftb}[1]{\textbf{\hyperref[#1]{Bảng~\ref*{#1}}}}
 
 \DefTblrTemplate{contfoot-text}{default}{Tiếp tục bên trang tiếp theo}
 \DefTblrTemplate{conthead-text}{default}{(Tiếp tục)}

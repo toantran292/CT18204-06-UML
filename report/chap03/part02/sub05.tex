@@ -1,0 +1,42 @@
+\phantomsection
+\subsubsection{Lớp TaiTroCSVC}
+\setcounter{figure}{0}
+\setcounter{paragraph}{0}
+
+\phantomsection
+\paragraph{Mô tả thuộc tính của lớp TaiTroCSVC}\mbox{}
+
+Các thuộc tính của lớp TaiTroCSVC được mô tả như ở \myreftb{tab:class5-1-spec}
+
+\begin{adjustwidth}{-2cm}{-1cm}
+  \begin{longtblr}[caption = {Mô tả thuộc tính của lớp TaiTroCSVC},
+    label = {tab:class5-1-spec},]{
+    width=1\linewidth, rowhead=1, hlines,vlines,
+    colspec={X[2,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[3,c]},
+    rows={1.5cm,m},
+    row{1}={font=\bfseries,c}}
+    Tên thuộc tính & Kiểu truy cập & Kiểu dữ liệu & Giá trị mặc nhiên & Kích thước & Min & Max & Diễn giải                                                           \\
+    tenCSVD        & public        & String       & Null              & 50         &     &     & Tên cơ sở vật chất mà nhà tài trợ tài trợ cho giải đấu.             \\
+    soLuong        & public        & int          & 0                 &            & 0   &     & Số lượng cơ sở vật chất cụ thể mà nhà tài trợ tài trợ cho giải đấu. \\
+  \end{longtblr}
+\end{adjustwidth}
+
+\phantomsection
+\paragraph{Mô tả phương thức của lớp TaiTroCSVC}\mbox{}
+
+Các phương thức của lớp TaiTroCSVC được mô tả như ở \myreftb{tab:class5-2-spec}
+
+\begin{adjustwidth}{-2cm}{-1cm}
+  \begin{longtblr}[caption = {Mô tả phương thức của lớp TaiTroCSVC},
+    label = {tab:class5-2-spec},]{
+    width=1\linewidth, rowhead=1, hlines,vlines,
+    colspec={X[3,c]X[1,c]X[3,c]X[1,c]X[1,c]X[1,c]X[2,c]X[3,c]},
+    rows={1.5cm,m},
+    row{1}={font=\bfseries,c}}
+    Tên phương thức                 & Kiểu truy cập          & Danh sách các tham số            & Kiểu dữ liệu tham số & Giá trị mặc nhiên & Kích thước & Kiểu trả về của phương thức & Diễn giải                                                                                      \\
+    \SetCell[r=3]{} taoTaiTroCSVC() & \SetCell[r=3]{} public & \SetCell[c=4]{} Có 2 tham số     &                      &                   &            & \SetCell[r=3]{} boolean     & \SetCell[r=3]{} Tạo tài trợ CSVC cho giải đấu. Trả về true nếu thành công, false nếu thất bại. \\
+                                    &                        & tenCSVC                          & String               & Null              & 50         &                             &                                                                                                \\
+                                    &                        & soLuong                          & int                  & 0                 &            &                             &                                                                                                \\
+    layDSCSVC()                     & public                 & \SetCell[c=4]{} Không có tham số &                      &                   &            & List                        & Trả về danh sách các CSVC đã tài trợ cho giải đấu.                                             \\
+  \end{longtblr}
+\end{adjustwidth}

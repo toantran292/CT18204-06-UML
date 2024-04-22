@@ -1,3 +1,42 @@
 \phantomsection
-\subsection{Sơ đồ tuần tự ""}
+\subsection{Sơ đồ tuần tự "Tạo giải đấu"}
 \setcounter{figure}{0}
+
+Chức năng "Tạo giải đấu" là một trong các chức năng của actor "Trưởng ban tổ chức". Chức năng này đã được thể hiện ở \myref{}. Sơ đồ tuần tự của chức năng này được thể hiện cụ thể ở \myref{} sau:
+
+Người thiết kế: Hà Ngọc Linh B2207536
+Sơ đồ này đã được đặc tả cục thể tại mô tả Use case "Tạo giải đấu" ở \myreftb{}
+
+\noindent
+\textbf{Mô tả chức năng:} Cho phép Trưởng ban tổ chức tạo ra giải đấu mới.
+
+\noindent
+\textbf{Điều kiện tiên quyết:} Trưởng ban tổ chức được cấp tài khoản từ Quản trị viên và đăng nhập thành công vào hệ thống.
+
+\noindent
+\textbf{Trình tự thực hiện:}
+\begin{enumerate}
+      \item Trưởng ban tổ chức sau khi đăng nhập vào hệ thống thì chọn danh mục Quản lý giải đấu.
+      \item Hệ thống sẽ chuyển hướng đến giao diện Quản lý giải đấu.
+      \item Trưởng ban tổ chức chọn danh mục Tạo giải đấu.
+      \item Hệ thống sẽ chuyển hướng đến giao diện Tạo giải đấu.\\
+            \textbf{[Loop]}
+      \item    Trưởng ban tổ chức điền các thông tin để tạo giải đấu mới như: tên, ngày tổ chức, cơ cấu giải thưởng,...
+      \item Người dùng nhấn vào nút thoát. \textbf{[Tùy chọn 1]}
+      \item Hệ thống chuyển hướng đến giao diện Tạo giải đấu. Thoát khỏi vòng lặp. \\
+            \textbf{[Kết thúc tùy chọn 1]}
+      \item Sau khi chỉnh sửa xong chọn Tạo giải đấu.
+      \item Hệ thống gọi phương thức kiemTraThongTin() để kiểm tra tính hợp lệ của thông tin vừa nhập.
+      \item Trả về kết quả kiểm tra. \\
+            \textbf{[Rẽ nhánh]}
+      \item Nếu thông tin nhập không hợp lệ [ketQua == false]. Thông báo lỗi nhập liệu cụ thể cho Trưởng ban tổ chức. Trở về giao diện Tạo giải đấu, tiếp tục vòng lặp. \textbf{[Rẽ nhánh 1]}
+      \item Ngược lại, nếu thông tin nhập hợp lệ [ketQua == true]. Hệ thống tiến hành lưu thay đổi. \textbf{[Rẽ nhánh 2]}
+      \item Hệ thống trả về thông báo Tạo giải đấu thành công.
+      \item Giao diện thông báo cho Trưởng ban tổ chức việc Tạo giải đấu đã thành công. Thoát khỏi vòng lặp.
+      \item Trở về giao diện Quản lý giải đấu. \\
+            \textbf{Kết Thúc}
+\end{enumerate}
+
+\noindent
+\textbf{Kết quả:} Thao tác Tạo giải đấu mới thành công.
+
