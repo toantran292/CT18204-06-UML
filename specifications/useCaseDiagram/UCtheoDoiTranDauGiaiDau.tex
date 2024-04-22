@@ -1,0 +1,113 @@
+\documentclass{article}
+\usepackage[paperheight=29.7cm,paperwidth=21cm,right=2cm,left=1cm,top=2cm,bottom=2.5cm]{geometry}
+\usepackage[vietnamese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{array, multirow}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{lipsum} 
+\usepackage{enumitem}
+\usepackage{tabularray}
+\renewcommand{\arraystretch}{1.5} % Cell height scaling
+
+\DefTblrTemplate{contfoot-text}{default}{Tiếp tục bên trang tiếp theo}
+\DefTblrTemplate{conthead-text}{default}{(Tiếp tục)}
+
+\begin{document}
+
+% useCase
+
+\begin{longtblr}[caption = {Đặc tả usecase 	Theo dõi trận đấu, giải đấu},
+  label = {tab:usecase1-spec},]{colspec={|l|p{.7\linewidth}|}}
+  \hline
+  \textbf{Tên usecase} & \textbf{Theo dõi trận đấu, giải đấu}                                                                        \\\hline
+  Tóm tắt              & Cho phép Người đã đăng nhập theo dõi trận đấu, giải đấu mà mình quan tâm.                                            \\\hline
+  Actor                & Người đã đăng nhập.                                                                          \\\hline
+  Phiên bản            & 1.0                                                                                          \\\hline
+  Chịu trách nghiệm    & Khưu Thị Bích Ngọc                                                                                 \\\hline
+  Ngày tạo             & 17/04/2024                                                                                   \\\hline
+  Ngày cập nhật        &                                                                                    \\\hline
+  Điều kiện tiên quyết & Người đã đăng nhập đã đăng nhập thành công vào hệ thống và đang xem thông tin chi tiết trân đấu hoặc giải đấu nào đó. \\\hline
+  Kịch bản thường      &
+  \begin{minipage}{\linewidth}
+    \vskip 4pt
+    \begin{enumerate}
+      \item  Người đã đăng nhập ấn chọn nút theo dõi của trận đấu, giải đấu.
+      \item  Giao diện gửi yêu cầu kiểm tra xem người dùng đã theo dõi trận đấu, giải đấu đó hay chưa.
+      \item  Hệ thống tiến hành kiểm tra.
+      \item Hệ thống trả về kết quả vừa kiểm tra.  \\
+            \textbf{Có thể nhảy đến}\\
+            \textbf{\textcolor{red}{A1}} -- Người dùng đã theo dõi.
+      \item Nếu người dùng chưa theo dõi, giao diện hiển thị để người dùng chọn cấp độ theo dõi mong muốn.
+      \item Người dùng chọn cấp độ theo dõi và ấn gửi.
+      \item Hệ thống lưu thông tin theo dõi của người.  \\
+            \textbf{Có thể nhảy đến}\\
+            \textbf{\textcolor{red}{A2}} -- Lưu thông tin theo dõi thất bại.
+       \item Nếu lưu thông tin theo dõi thành công, hệ thống gửi thông báo thành công về trình duyệt.
+       \item Trình duyệt hiển thị kết quả.
+    \end{enumerate}
+    \vskip 1pt
+  \end{minipage}
+  \\\hline
+  Kịch bản thay thế    &
+  \begin{minipage}{\linewidth}
+    \vskip 4pt
+    \begin{enumerate}[label={\textbf{\textcolor{red}{A\arabic*}} --}, align=left, itemsep=-5pt]
+      \item  Người dùng đã theo dõi.  \\
+            \vspace{-1.5em}
+            \begin{enumerate}[leftmargin=-5px, align=left, label=\arabic*.]
+              \setcounter{enumii}{4}
+              \item[]
+                    \hspace{-25px} Chuỗi A1 bắt đầu ở bước 4 của kịch bản thường.
+              \item Trình duyệt yêu cầu người dùng xác nhận tiếp tục hay dừng quá trình hủy theo dõi.\\
+                  \textbf{Có thể nhảy đến}\\
+                  \textbf{\textcolor{red}{A3}} -- Người dùng dừng quá trình hủy yêu cầu.
+              \item Người dùng chọn tiếp tục thực hiện.
+              \item Hệ thống hủy theo dõi trận đấu, giải đấu của người dùng đó.\\
+                  \textbf{Có thể nhảy đến}\\
+                  \textbf{\textcolor{red}{A4}} -- Hủy theo dỗi thất bại.
+            
+              \item Nếu hủy theo dõi thành công, hệ thống gửi thông báo thành công về giao diện.
+              \item[]
+                    \hspace{-25px} Trở về bước 9 của kịch bản thường.
+            \end{enumerate}
+            
+       \item Lưu thông tin theo dõi thất bại. \\
+            \vspace{-1.5em}
+            \begin{enumerate}[leftmargin=-5px, align=left, label=\arabic*.]
+              \setcounter{enumii}{7}
+              \item[]
+                    \hspace{-25px} 	Chuỗi A2 bắt đầu ở bước 7 của kịch bản thường.
+              \item Hệ thống gửi thông báo tạo theo dõi thất bại.
+              \item[]
+                    \hspace{-25px} Trở về bước 9 của kịch bản thường.
+            \end{enumerate}
+            
+         \item Người dùng dừng quá trình hủy yêu cầu. \\
+            \vspace{-1.5em}
+            \begin{enumerate}[leftmargin=-5px, align=left, label=\arabic*.]
+              \setcounter{enumii}{5}
+              \item[]
+                    \hspace{-25px} 	Chuỗi A3 bắt đầu ở bước 5 của kịch bản thay thế.
+              \item Trở về giao diện ban đầu và kết thúc kịch bản.
+            \end{enumerate}
+
+        \item Huỷ theo dõi thất bại. \\
+            \vspace{-1.5em}
+            \begin{enumerate}[leftmargin=-5px, align=left, label=\arabic*.]
+              \setcounter{enumii}{7}
+              \item[]
+                    \hspace{-25px} 	Chuỗi A4 bắt đầu ở bước 7 của kịch bản thay thế.
+              \item Hệ thống gửi thông báo hủy theo dõi thất bại về giao diện.
+              \item[]
+                    \hspace{-25px} Trở về bước 9 của kịch bản thường.
+            \end{enumerate}
+            
+    \end{enumerate}
+    \vskip 1pt
+  \end{minipage}
+  \\\hline
+  Kịch bản lỗi         &                                                                                              \\\hline
+  Kết quả              & Thao tác theo dõi/hủy theo dõi trận đấu, giải đấu thành công.                                                                 \\\hline
+\end{longtblr}
+\end{document}

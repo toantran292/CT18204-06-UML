@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage[paperheight=29.7cm,paperwidth=21cm,right=2cm,left=1cm,top=2cm,bottom=2.5cm]{geometry}
+\usepackage[vietnamese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{array, multirow}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{lipsum}
+\usepackage{enumitem}
+\usepackage{tabularray}
+\renewcommand{\arraystretch}{1.5} % Cell height scaling
+
+\DefTblrTemplate{contfoot-text}{default}{Tiếp tục bên trang tiếp theo}
+\DefTblrTemplate{conthead-text}{default}{(Tiếp tục)}
+
+\begin{document}
+
+% useCase
+
+\begin{longtblr}[caption = {Đặc tả usecase Xem diễn biến trận đấu loại},
+label = {tab:usecase1-spec},]{colspec={|l|p{.7\linewidth}|}}
+\hline
+\textbf{Tên usecase} & \textbf{Xem diễn biến trận đấu loại} \\\hline
+Tóm tắt & Cho phép người sử dụng xem diễn biến của trận đấu loại. \\\hline
+Actor & Người dùng. \\\hline
+Phiên bản & 1.4 \\\hline
+Chịu trách nghiệm & Trần Thái Toàn \\\hline
+Ngày tạo & 10/03/2024 \\\hline
+Ngày cập nhật & 26/03/2024 \\\hline
+Điều kiện tiên quyết & Không có. \\\hline
+Kịch bản thường &
+\begin{minipage}{\linewidth}
+\vskip 4pt
+\begin{enumerate}
+\item Người dùng truy cập vào hệ thống và chọn vào danh mục trận đấu loại.
+\item Hệ thống hiển thị danh sách trận đấu. \\
+\textbf{Có thể nhảy đến}\\
+\textbf{\textcolor{red}{A1}} -- Người dùng chọn vào chức năng tìm kiếm trận đấu.
+\item Người dùng chọn trận đấu cụ thể để xem diễn biến.
+\item Hệ thống hiển thị diễn biết chi tiết của trận đấu.
+\end{enumerate}
+\vskip 1pt
+\end{minipage}
+\\\hline
+Kịch bản thay thế &
+\begin{minipage}{\linewidth}
+\vskip 4pt
+\begin{enumerate}[label={\textbf{\textcolor{red}{A\arabic*}} --}, align=left, itemsep=-5pt]
+\item Người dùng chọn vào chức năng tìm kiếm. \\
+\vspace{-1.5em}
+\begin{enumerate}[leftmargin=-5px, align=left, label=\arabic*.]
+\setcounter{enumii}{2}
+\item[]
+\hspace{-25px} Chuỗi A bắt đầu ở bước 2 của kịch bản thường.
+\item Hệ thống hiển thị thanh tìm kiếm.
+\item Người dùng nhập tên trận đấu vào thanh tìm kiếm và nhấn tìm kiếm.\\
+\textbf{Có thể nhảy đến}\\
+\textbf{\textcolor{red}{A2}} -- Không tìm thấy trận đấu theo tên trận đấu người dùng cung cấp.
+\item Hệ thống hiển thị danh sách trận đấu theo tên trận đấu người dùng cung cấp.
+\item[]
+\hspace{-25px} Trở về bước 3 của kịch bản thường.
+\end{enumerate}
+
+       \item Không tìm thấy trận đấu theo tên trận đấu người dùng cung cấp. \\
+            \vspace{-1.5em}
+            \begin{enumerate}[leftmargin=-5px, align=left, label=\arabic*.]
+              \setcounter{enumii}{4}
+              \item[]
+                    \hspace{-25px} Chuỗi I bắt đầu ở bước 4 của kịch bản thay thế A.
+              \item Hiển thị trận đấu không tìm thấy cho người dùng.
+              \item[]
+                    \hspace{-25px} Trở về bước 2 của kịch bản thường.
+            \end{enumerate}
+    \end{enumerate}
+    \vskip 1pt
+
+\end{minipage}
+\\\hline
+Kịch bản lỗi & \\\hline
+Kết quả & Hiện thị diễn biến trận đấu. \\\hline
+\end{longtblr}
+\end{document}
